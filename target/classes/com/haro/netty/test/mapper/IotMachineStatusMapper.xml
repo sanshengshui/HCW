@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.haro.netty.test.mapper.IotMachineStatusMapper" >
+  <resultMap id="BaseResultMap" type="com.haro.netty.test.pojo.IotMachineStatus" >
+    <id column="device_name" property="deviceName" jdbcType="VARCHAR" />
+    <result column="device_status" property="deviceStatus" jdbcType="INTEGER" />
+    <result column="device_info" property="deviceInfo" jdbcType="INTEGER" />
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    device_name, device_status, device_info
+  </sql>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.haro.netty.test.pojo.IotMachineStatusExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from iot_machine_status
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select 
+    <include refid="Base_Column_List" />
+    from iot_machine_status
+    where device_name = #{deviceName,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from iot_machine_status
+    where device_name = #{deviceName,jdbcType=VARCHAR}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.haro.netty.test.pojo.IotMachineStatusExample" >
+    delete from iot_machine_status
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.haro.netty.test.pojo.IotMachineStatus" >
+    insert into iot_machine_status (device_name, device_status, device_info
+      )
+    values (#{deviceName,jdbcType=VARCHAR}, #{deviceStatus,jdbcType=INTEGER}, #{deviceInfo,jdbcType=INTEGER}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.haro.netty.test.pojo.IotMachineStatus" >
+    insert into iot_machine_status
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="deviceName != null" >
+        device_name,
+      </if>
+      <if test="deviceStatus != null" >
+        device_status,
+      </if>
+      <if test="deviceInfo != null" >
+        device_info,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="deviceName != null" >
+        #{deviceName,jdbcType=VARCHAR},
+      </if>
+      <if test="deviceStatus != null" >
+        #{deviceStatus,jdbcType=INTEGER},
+      </if>
+      <if test="deviceInfo != null" >
+        #{deviceInfo,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.haro.netty.test.pojo.IotMachineStatusExample" resultType="java.lang.Integer" >
+    select count(*) from iot_machine_status
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update iot_machine_status
+    <set >
+      <if test="record.deviceName != null" >
+        device_name = #{record.deviceName,jdbcType=VARCHAR},
+      </if>
+      <if test="record.deviceStatus != null" >
+        device_status = #{record.deviceStatus,jdbcType=INTEGER},
+      </if>
+      <if test="record.deviceInfo != null" >
+        device_info = #{record.deviceInfo,jdbcType=INTEGER},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update iot_machine_status
+    set device_name = #{record.deviceName,jdbcType=VARCHAR},
+      device_status = #{record.deviceStatus,jdbcType=INTEGER},
+      device_info = #{record.deviceInfo,jdbcType=INTEGER}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.haro.netty.test.pojo.IotMachineStatus" >
+    update iot_machine_status
+    <set >
+      <if test="deviceStatus != null" >
+        device_status = #{deviceStatus,jdbcType=INTEGER},
+      </if>
+      <if test="deviceInfo != null" >
+        device_info = #{deviceInfo,jdbcType=INTEGER},
+      </if>
+    </set>
+    where device_name = #{deviceName,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.haro.netty.test.pojo.IotMachineStatus" >
+    update iot_machine_status
+    set device_status = #{deviceStatus,jdbcType=INTEGER},
+      device_info = #{deviceInfo,jdbcType=INTEGER}
+    where device_name = #{deviceName,jdbcType=VARCHAR}
+  </update>
+</mapper>

@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.haro.netty.test.mapper.IotMachineInfoMapper" >
+  <resultMap id="BaseResultMap" type="com.haro.netty.test.pojo.IotMachineInfo" >
+    <id column="info_id" property="infoId" jdbcType="INTEGER" />
+    <result column="device_name" property="deviceName" jdbcType="VARCHAR" />
+    <result column="temp_status" property="tempStatus" jdbcType="VARCHAR" />
+    <result column="twoel_length" property="twoelLength" jdbcType="VARCHAR" />
+    <result column="alarm_status" property="alarmStatus" jdbcType="VARCHAR" />
+    <result column="temp_model" property="tempModel" jdbcType="VARCHAR" />
+    <result column="total_twoel_num" property="totalTwoelNum" jdbcType="INTEGER" />
+    <result column="new_total_num" property="newTotalNum" jdbcType="INTEGER" />
+    <result column="surplus" property="surplus" jdbcType="INTEGER" />
+    <result column="water_capacity" property="waterCapacity" jdbcType="VARCHAR" />
+    <result column="water_source" property="waterSource" jdbcType="VARCHAR" />
+    <result column="ph" property="ph" jdbcType="VARCHAR" />
+    <result column="total_coins" property="totalCoins" jdbcType="INTEGER" />
+    <result column="mobile_pay" property="mobilePay" jdbcType="INTEGER" />
+    <result column="pay_card" property="payCard" jdbcType="INTEGER" />
+    <result column="device_sn" property="deviceSn" jdbcType="VARCHAR" />
+     <result column="return_time" property="returnTime" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    info_id, device_name, temp_status, twoel_length, alarm_status, temp_model, total_twoel_num, 
+    new_total_num, surplus, water_capacity, water_source, ph, total_coins, mobile_pay, 
+    pay_card, device_sn,return_time
+  </sql>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.haro.netty.test.pojo.IotMachineInfoExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from iot_machine_info
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from iot_machine_info
+    where info_id = #{infoId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from iot_machine_info
+    where info_id = #{infoId,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.haro.netty.test.pojo.IotMachineInfoExample" >
+    delete from iot_machine_info
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.haro.netty.test.pojo.IotMachineInfo" >
+    insert into iot_machine_info (info_id, device_name, temp_status, 
+      twoel_length, alarm_status, temp_model, 
+      total_twoel_num, new_total_num, surplus, 
+      water_capacity, water_source, ph, 
+      total_coins, mobile_pay, pay_card, 
+      device_sn,return_time)
+    values (#{infoId,jdbcType=INTEGER}, #{deviceName,jdbcType=VARCHAR}, #{tempStatus,jdbcType=VARCHAR}, 
+      #{twoelLength,jdbcType=VARCHAR}, #{alarmStatus,jdbcType=VARCHAR}, #{tempModel,jdbcType=VARCHAR}, 
+      #{totalTwoelNum,jdbcType=INTEGER}, #{newTotalNum,jdbcType=INTEGER}, #{surplus,jdbcType=INTEGER}, 
+      #{waterCapacity,jdbcType=VARCHAR}, #{waterSource,jdbcType=VARCHAR}, #{ph,jdbcType=VARCHAR}, 
+      #{totalCoins,jdbcType=INTEGER}, #{mobilePay,jdbcType=INTEGER}, #{payCard,jdbcType=INTEGER}, 
+      #{deviceSn,jdbcType=VARCHAR},#{returnTime,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.haro.netty.test.pojo.IotMachineInfo" >
+    insert into iot_machine_info
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="infoId != null" >
+        info_id,
+      </if>
+      <if test="deviceName != null" >
+        device_name,
+      </if>
+      <if test="tempStatus != null" >
+        temp_status,
+      </if>
+      <if test="twoelLength != null" >
+        twoel_length,
+      </if>
+      <if test="alarmStatus != null" >
+        alarm_status,
+      </if>
+      <if test="tempModel != null" >
+        temp_model,
+      </if>
+      <if test="totalTwoelNum != null" >
+        total_twoel_num,
+      </if>
+      <if test="newTotalNum != null" >
+        new_total_num,
+      </if>
+      <if test="surplus != null" >
+        surplus,
+      </if>
+      <if test="waterCapacity != null" >
+        water_capacity,
+      </if>
+      <if test="waterSource != null" >
+        water_source,
+      </if>
+      <if test="ph != null" >
+        ph,
+      </if>
+      <if test="totalCoins != null" >
+        total_coins,
+      </if>
+      <if test="mobilePay != null" >
+        mobile_pay,
+      </if>
+      <if test="payCard != null" >
+        pay_card,
+      </if>
+      <if test="deviceSn != null" >
+        device_sn,
+      </if>
+      <if test="returnTime != null" >
+       return_time,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="infoId != null" >
+        #{infoId,jdbcType=INTEGER},
+      </if>
+      <if test="deviceName != null" >
+        #{deviceName,jdbcType=VARCHAR},
+      </if>
+      <if test="tempStatus != null" >
+        #{tempStatus,jdbcType=VARCHAR},
+      </if>
+      <if test="twoelLength != null" >
+        #{twoelLength,jdbcType=VARCHAR},
+      </if>
+      <if test="alarmStatus != null" >
+        #{alarmStatus,jdbcType=VARCHAR},
+      </if>
+      <if test="tempModel != null" >
+        #{tempModel,jdbcType=VARCHAR},
+      </if>
+      <if test="totalTwoelNum != null" >
+        #{totalTwoelNum,jdbcType=INTEGER},
+      </if>
+      <if test="newTotalNum != null" >
+        #{newTotalNum,jdbcType=INTEGER},
+      </if>
+      <if test="surplus != null" >
+        #{surplus,jdbcType=INTEGER},
+      </if>
+      <if test="waterCapacity != null" >
+        #{waterCapacity,jdbcType=VARCHAR},
+      </if>
+      <if test="waterSource != null" >
+        #{waterSource,jdbcType=VARCHAR},
+      </if>
+      <if test="ph != null" >
+        #{ph,jdbcType=VARCHAR},
+      </if>
+      <if test="totalCoins != null" >
+        #{totalCoins,jdbcType=INTEGER},
+      </if>
+      <if test="mobilePay != null" >
+        #{mobilePay,jdbcType=INTEGER},
+      </if>
+      <if test="payCard != null" >
+        #{payCard,jdbcType=INTEGER},
+      </if>
+      <if test="deviceSn != null" >
+        #{deviceSn,jdbcType=VARCHAR},
+      </if>
+       <if test="returnTime != null" >
+        #{returnTime,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.haro.netty.test.pojo.IotMachineInfoExample" resultType="java.lang.Integer" >
+    select count(*) from iot_machine_info
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update iot_machine_info
+    <set >
+      <if test="record.infoId != null" >
+        info_id = #{record.infoId,jdbcType=INTEGER},
+      </if>
+      <if test="record.deviceName != null" >
+        device_name = #{record.deviceName,jdbcType=VARCHAR},
+      </if>
+      <if test="record.tempStatus != null" >
+        temp_status = #{record.tempStatus,jdbcType=VARCHAR},
+      </if>
+      <if test="record.twoelLength != null" >
+        twoel_length = #{record.twoelLength,jdbcType=VARCHAR},
+      </if>
+      <if test="record.alarmStatus != null" >
+        alarm_status = #{record.alarmStatus,jdbcType=VARCHAR},
+      </if>
+      <if test="record.tempModel != null" >
+        temp_model = #{record.tempModel,jdbcType=VARCHAR},
+      </if>
+      <if test="record.totalTwoelNum != null" >
+        total_twoel_num = #{record.totalTwoelNum,jdbcType=INTEGER},
+      </if>
+      <if test="record.newTotalNum != null" >
+        new_total_num = #{record.newTotalNum,jdbcType=INTEGER},
+      </if>
+      <if test="record.surplus != null" >
+        surplus = #{record.surplus,jdbcType=INTEGER},
+      </if>
+      <if test="record.waterCapacity != null" >
+        water_capacity = #{record.waterCapacity,jdbcType=VARCHAR},
+      </if>
+      <if test="record.waterSource != null" >
+        water_source = #{record.waterSource,jdbcType=VARCHAR},
+      </if>
+      <if test="record.ph != null" >
+        ph = #{record.ph,jdbcType=VARCHAR},
+      </if>
+      <if test="record.totalCoins != null" >
+        total_coins = #{record.totalCoins,jdbcType=INTEGER},
+      </if>
+      <if test="record.mobilePay != null" >
+        mobile_pay = #{record.mobilePay,jdbcType=INTEGER},
+      </if>
+      <if test="record.payCard != null" >
+        pay_card = #{record.payCard,jdbcType=INTEGER},
+      </if>
+      <if test="record.deviceSn != null" >
+        device_sn = #{record.deviceSn,jdbcType=VARCHAR},
+      </if>
+       <if test="record.returnTime != null" >
+       return_time = #{record.returnTime,jdbcType=VARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update iot_machine_info
+    set info_id = #{record.infoId,jdbcType=INTEGER},
+      device_name = #{record.deviceName,jdbcType=VARCHAR},
+      temp_status = #{record.tempStatus,jdbcType=VARCHAR},
+      twoel_length = #{record.twoelLength,jdbcType=VARCHAR},
+      alarm_status = #{record.alarmStatus,jdbcType=VARCHAR},
+      temp_model = #{record.tempModel,jdbcType=VARCHAR},
+      total_twoel_num = #{record.totalTwoelNum,jdbcType=INTEGER},
+      new_total_num = #{record.newTotalNum,jdbcType=INTEGER},
+      surplus = #{record.surplus,jdbcType=INTEGER},
+      water_capacity = #{record.waterCapacity,jdbcType=VARCHAR},
+      water_source = #{record.waterSource,jdbcType=VARCHAR},
+      ph = #{record.ph,jdbcType=VARCHAR},
+      total_coins = #{record.totalCoins,jdbcType=INTEGER},
+      mobile_pay = #{record.mobilePay,jdbcType=INTEGER},
+      pay_card = #{record.payCard,jdbcType=INTEGER},
+      device_sn = #{record.deviceSn,jdbcType=VARCHAR},
+      return_time = #{record.returnTime,jdbcType=VARCHAR}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.haro.netty.test.pojo.IotMachineInfo" >
+    update iot_machine_info
+    <set >
+      <if test="deviceName != null" >
+        device_name = #{deviceName,jdbcType=VARCHAR},
+      </if>
+      <if test="tempStatus != null" >
+        temp_status = #{tempStatus,jdbcType=VARCHAR},
+      </if>
+      <if test="twoelLength != null" >
+        twoel_length = #{twoelLength,jdbcType=VARCHAR},
+      </if>
+      <if test="alarmStatus != null" >
+        alarm_status = #{alarmStatus,jdbcType=VARCHAR},
+      </if>
+      <if test="tempModel != null" >
+        temp_model = #{tempModel,jdbcType=VARCHAR},
+      </if>
+      <if test="totalTwoelNum != null" >
+        total_twoel_num = #{totalTwoelNum,jdbcType=INTEGER},
+      </if>
+      <if test="newTotalNum != null" >
+        new_total_num = #{newTotalNum,jdbcType=INTEGER},
+      </if>
+      <if test="surplus != null" >
+        surplus = #{surplus,jdbcType=INTEGER},
+      </if>
+      <if test="waterCapacity != null" >
+        water_capacity = #{waterCapacity,jdbcType=VARCHAR},
+      </if>
+      <if test="waterSource != null" >
+        water_source = #{waterSource,jdbcType=VARCHAR},
+      </if>
+      <if test="ph != null" >
+        ph = #{ph,jdbcType=VARCHAR},
+      </if>
+      <if test="totalCoins != null" >
+        total_coins = #{totalCoins,jdbcType=INTEGER},
+      </if>
+      <if test="mobilePay != null" >
+        mobile_pay = #{mobilePay,jdbcType=INTEGER},
+      </if>
+      <if test="payCard != null" >
+        pay_card = #{payCard,jdbcType=INTEGER},
+      </if>
+      <if test="deviceSn != null" >
+        device_sn = #{deviceSn,jdbcType=VARCHAR},
+      </if>
+       <if test="returnTime != null" >
+        return_time = #{returnTime,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where info_id = #{infoId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.haro.netty.test.pojo.IotMachineInfo" >
+    update iot_machine_info
+    set device_name = #{deviceName,jdbcType=VARCHAR},
+      temp_status = #{tempStatus,jdbcType=VARCHAR},
+      twoel_length = #{twoelLength,jdbcType=VARCHAR},
+      alarm_status = #{alarmStatus,jdbcType=VARCHAR},
+      temp_model = #{tempModel,jdbcType=VARCHAR},
+      total_twoel_num = #{totalTwoelNum,jdbcType=INTEGER},
+      new_total_num = #{newTotalNum,jdbcType=INTEGER},
+      surplus = #{surplus,jdbcType=INTEGER},
+      water_capacity = #{waterCapacity,jdbcType=VARCHAR},
+      water_source = #{waterSource,jdbcType=VARCHAR},
+      ph = #{ph,jdbcType=VARCHAR},
+      total_coins = #{totalCoins,jdbcType=INTEGER},
+      mobile_pay = #{mobilePay,jdbcType=INTEGER},
+      pay_card = #{payCard,jdbcType=INTEGER},
+      device_sn = #{deviceSn,jdbcType=VARCHAR},
+      return_time = #{returnTime ,jdbcType=VARCHAR}
+    where info_id = #{infoId,jdbcType=INTEGER}
+  </update>
+</mapper>

@@ -1,0 +1,72 @@
+[mylog-info][INFO] [2017-04-15 09:59:25] org.springframework.web.context.ContextLoader.initWebApplicationContext(305) | Root WebApplicationContext: initialization started
+   [mylog-info][INFO] [2017-04-15 09:59:25] org.springframework.context.support.AbstractApplicationContext.prepareRefresh(578) | Refreshing Root WebApplicationContext: startup date [Sat Apr 15 09:59:25 CST 2017]; root of context hierarchy
+   [mylog-info][INFO] [2017-04-15 09:59:25] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317) | Loading XML bean definitions from class path resource [spring.xml]
+   [mylog-info][INFO] [2017-04-15 09:59:26] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317) | Loading XML bean definitions from class path resource [spring-mybatis.xml]
+   [mylog-info][INFO] [2017-04-15 09:59:26] org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(172) | Loading properties file from class path resource [dbconfig.properties]
+   [mylog-info][INFO] [2017-04-15 09:59:26] org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(153) | JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+   [mylog-info][INFO] [2017-04-15 09:59:26] com.alibaba.druid.pool.DruidDataSource.init(655) | {dataSource-1} inited
+   [mylog-info][INFO] [2017-04-15 09:59:27] org.springframework.web.context.ContextLoader.initWebApplicationContext(345) | Root WebApplicationContext: initialization completed in 1640 ms
+   [mylog-info][INFO] [2017-04-15 09:59:27] org.springframework.web.servlet.FrameworkServlet.initServletBean(487) | FrameworkServlet 'rest': initialization started
+   [mylog-info][INFO] [2017-04-15 09:59:27] org.springframework.context.support.AbstractApplicationContext.prepareRefresh(578) | Refreshing WebApplicationContext for namespace 'rest-servlet': startup date [Sat Apr 15 09:59:27 CST 2017]; parent: Root WebApplicationContext
+   [mylog-info][INFO] [2017-04-15 09:59:27] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317) | Loading XML bean definitions from class path resource [spring-mvc.xml]
+   [mylog-info][INFO] [2017-04-15 09:59:27] org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(153) | JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+   [mylog-info][INFO] [2017-04-15 09:59:27] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(341) | Mapped URL path [/user/showInfos/{userId}] onto handler 'userController'
+   [mylog-info][INFO] [2017-04-15 09:59:27] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(341) | Mapped URL path [/user/showInfos/{userId}.*] onto handler 'userController'
+   [mylog-info][INFO] [2017-04-15 09:59:27] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(341) | Mapped URL path [/user/showInfos/{userId}/] onto handler 'userController'
+   [mylog-info][INFO] [2017-04-15 09:59:27] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(341) | Mapped URL path [/user/showInfo/{userId}] onto handler 'userController'
+   [mylog-info][INFO] [2017-04-15 09:59:27] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(341) | Mapped URL path [/user/showInfo/{userId}.*] onto handler 'userController'
+   [mylog-info][INFO] [2017-04-15 09:59:27] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(341) | Mapped URL path [/user/showInfo/{userId}/] onto handler 'userController'
+   [mylog-info][INFO] [2017-04-15 09:59:27] org.springframework.web.servlet.FrameworkServlet.initServletBean(506) | FrameworkServlet 'rest': initialization completed in 625 ms
+   [mylog-info][INFO] [2017-04-15 11:00:00] com.haro.netty.iot.netty.handler.ServerHandler.channelRegistered(43) | client: /10.123.48.122:57463channelRegistered
+   [mylog-info][INFO] [2017-04-15 11:00:00] com.haro.netty.iot.netty.handler.ServerHandler.channelActive(79) | client: /10.123.48.122:57463channelActive
+   [mylog-info][INFO] [2017-04-15 11:00:14] com.haro.netty.iot.netty.handler.ServerHandler.channelInactive(90) | client: /10.123.48.122:57463channelInactive
+   [mylog-info][INFO] [2017-04-15 11:10:30] org.springframework.web.context.ContextLoader.initWebApplicationContext(305) | Root WebApplicationContext: initialization started
+   [mylog-info][INFO] [2017-04-15 11:10:30] org.springframework.context.support.AbstractApplicationContext.prepareRefresh(578) | Refreshing Root WebApplicationContext: startup date [Sat Apr 15 11:10:30 CST 2017]; root of context hierarchy
+   [mylog-info][INFO] [2017-04-15 11:10:30] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317) | Loading XML bean definitions from class path resource [spring.xml]
+   [mylog-info][INFO] [2017-04-15 11:10:30] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317) | Loading XML bean definitions from class path resource [spring-mybatis.xml]
+   [mylog-info][INFO] [2017-04-15 11:10:31] org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(172) | Loading properties file from class path resource [dbconfig.properties]
+   [mylog-info][INFO] [2017-04-15 11:10:31] org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(153) | JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+   [mylog-info][INFO] [2017-04-15 11:10:31] com.alibaba.druid.pool.DruidDataSource.init(655) | {dataSource-1} inited
+   [mylog-info][INFO] [2017-04-15 11:10:32] org.springframework.web.context.ContextLoader.initWebApplicationContext(345) | Root WebApplicationContext: initialization completed in 1862 ms
+   [mylog-info][INFO] [2017-04-15 11:10:32] org.springframework.web.servlet.FrameworkServlet.initServletBean(487) | FrameworkServlet 'rest': initialization started
+   [mylog-info][INFO] [2017-04-15 11:10:32] org.springframework.context.support.AbstractApplicationContext.prepareRefresh(578) | Refreshing WebApplicationContext for namespace 'rest-servlet': startup date [Sat Apr 15 11:10:32 CST 2017]; parent: Root WebApplicationContext
+   [mylog-info][INFO] [2017-04-15 11:10:32] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317) | Loading XML bean definitions from class path resource [spring-mvc.xml]
+   [mylog-info][INFO] [2017-04-15 11:10:32] org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(153) | JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+   [mylog-info][INFO] [2017-04-15 11:10:32] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(341) | Mapped URL path [/user/showInfo/{userId}] onto handler 'userController'
+   [mylog-info][INFO] [2017-04-15 11:10:32] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(341) | Mapped URL path [/user/showInfo/{userId}.*] onto handler 'userController'
+   [mylog-info][INFO] [2017-04-15 11:10:32] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(341) | Mapped URL path [/user/showInfo/{userId}/] onto handler 'userController'
+   [mylog-info][INFO] [2017-04-15 11:10:32] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(341) | Mapped URL path [/user/showInfos/{userId}] onto handler 'userController'
+   [mylog-info][INFO] [2017-04-15 11:10:32] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(341) | Mapped URL path [/user/showInfos/{userId}.*] onto handler 'userController'
+   [mylog-info][INFO] [2017-04-15 11:10:32] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(341) | Mapped URL path [/user/showInfos/{userId}/] onto handler 'userController'
+   [mylog-info][INFO] [2017-04-15 11:10:32] org.springframework.web.servlet.FrameworkServlet.initServletBean(506) | FrameworkServlet 'rest': initialization completed in 373 ms
+   [mylog-info][INFO] [2017-04-15 11:10:36] com.haro.netty.iot.netty.handler.ServerHandler.channelRegistered(43) | client: /10.123.48.122:57821channelRegistered
+   [mylog-info][INFO] [2017-04-15 11:10:36] com.haro.netty.iot.netty.handler.ServerHandler.channelActive(79) | client: /10.123.48.122:57821channelActive
+   [mylog-info][INFO] [2017-04-15 11:11:22] com.haro.netty.iot.netty.handler.ServerHandler.channelInactive(90) | client: /10.123.48.122:57821channelInactive
+   [mylog-info][INFO] [2017-04-15 11:13:47] com.haro.netty.iot.netty.handler.ServerHandler.channelRegistered(43) | client: /10.123.48.122:57987channelRegistered
+   [mylog-info][INFO] [2017-04-15 11:13:47] com.haro.netty.iot.netty.handler.ServerHandler.channelActive(79) | client: /10.123.48.122:57987channelActive
+   [mylog-info][INFO] [2017-04-15 11:14:06] com.haro.netty.iot.netty.handler.ServerHandler.channelInactive(90) | client: /10.123.48.122:57987channelInactive
+   [mylog-info][INFO] [2017-04-15 11:14:12] com.haro.netty.iot.netty.handler.ServerHandler.channelRegistered(43) | client: /10.123.48.122:58002channelRegistered
+   [mylog-info][INFO] [2017-04-15 11:14:12] com.haro.netty.iot.netty.handler.ServerHandler.channelActive(79) | client: /10.123.48.122:58002channelActive
+   [mylog-info][WARN] [2017-04-15 11:15:12] io.netty.util.internal.logging.Slf4JLogger.warn(151) | An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+   io.netty.handler.timeout.ReadTimeoutException
+[mylog-info][INFO] [2017-04-15 11:15:12] com.haro.netty.iot.netty.handler.ServerHandler.channelInactive(90) | client: /10.123.48.122:58002channelInactive
+   [mylog-info][INFO] [2017-04-15 11:28:40] org.springframework.web.context.ContextLoader.initWebApplicationContext(305) | Root WebApplicationContext: initialization started
+   [mylog-info][INFO] [2017-04-15 11:28:40] org.springframework.context.support.AbstractApplicationContext.prepareRefresh(578) | Refreshing Root WebApplicationContext: startup date [Sat Apr 15 11:28:40 CST 2017]; root of context hierarchy
+   [mylog-info][INFO] [2017-04-15 11:28:40] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317) | Loading XML bean definitions from class path resource [spring.xml]
+   [mylog-info][INFO] [2017-04-15 11:28:41] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317) | Loading XML bean definitions from class path resource [spring-mybatis.xml]
+   [mylog-info][INFO] [2017-04-15 11:28:41] org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(172) | Loading properties file from class path resource [dbconfig.properties]
+   [mylog-info][INFO] [2017-04-15 11:28:41] org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(153) | JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+   [mylog-info][INFO] [2017-04-15 11:28:42] com.alibaba.druid.pool.DruidDataSource.init(655) | {dataSource-1} inited
+   [mylog-info][INFO] [2017-04-15 11:28:43] org.springframework.web.context.ContextLoader.initWebApplicationContext(345) | Root WebApplicationContext: initialization completed in 2268 ms
+   [mylog-info][INFO] [2017-04-15 11:28:43] org.springframework.web.servlet.FrameworkServlet.initServletBean(487) | FrameworkServlet 'rest': initialization started
+   [mylog-info][INFO] [2017-04-15 11:28:43] org.springframework.context.support.AbstractApplicationContext.prepareRefresh(578) | Refreshing WebApplicationContext for namespace 'rest-servlet': startup date [Sat Apr 15 11:28:43 CST 2017]; parent: Root WebApplicationContext
+   [mylog-info][INFO] [2017-04-15 11:28:43] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317) | Loading XML bean definitions from class path resource [spring-mvc.xml]
+   [mylog-info][INFO] [2017-04-15 11:28:43] org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(153) | JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+   [mylog-info][INFO] [2017-04-15 11:28:43] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(341) | Mapped URL path [/user/showInfos/{userId}] onto handler 'userController'
+   [mylog-info][INFO] [2017-04-15 11:28:43] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(341) | Mapped URL path [/user/showInfos/{userId}.*] onto handler 'userController'
+   [mylog-info][INFO] [2017-04-15 11:28:43] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(341) | Mapped URL path [/user/showInfos/{userId}/] onto handler 'userController'
+   [mylog-info][INFO] [2017-04-15 11:28:43] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(341) | Mapped URL path [/user/showInfo/{userId}] onto handler 'userController'
+   [mylog-info][INFO] [2017-04-15 11:28:43] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(341) | Mapped URL path [/user/showInfo/{userId}.*] onto handler 'userController'
+   [mylog-info][INFO] [2017-04-15 11:28:43] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(341) | Mapped URL path [/user/showInfo/{userId}/] onto handler 'userController'
+   [mylog-info][INFO] [2017-04-15 11:28:43] org.springframework.web.servlet.FrameworkServlet.initServletBean(506) | FrameworkServlet 'rest': initialization completed in 649 ms
+   
