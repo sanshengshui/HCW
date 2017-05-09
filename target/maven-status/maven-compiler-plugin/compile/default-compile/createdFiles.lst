@@ -4,6 +4,7 @@ com\haro\netty\util\ContextHolderUtils.class
 com\haro\netty\util\ByteUtil.class
 com\haro\netty\iot\netty\cfg\SpringConfig.class
 com\haro\netty\iot\netty\handler\ServerHandler.class
+com\haro\netty\test\pojo\DeviceStatus.class
 com\haro\netty\util\DataUtils.class
 com\haro\netty\iot\netty\server\TCPServer.class
 com\haro\netty\iot\threadpool\ExecutorProcessPool.class

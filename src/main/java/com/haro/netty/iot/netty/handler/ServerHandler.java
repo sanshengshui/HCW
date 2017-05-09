@@ -198,6 +198,8 @@ public class ServerHandler extends  ChannelInboundHandlerAdapter {
 				encoded.writeBytes(reqData);
 				ctx.write(encoded);
 				ctx.flush();
+				String stringReq=bytesToHexString(req);
+				logger.info(stringReq);
 				String reqdata=bytesToHexString(reqData);
 				logger.info(reqdata);
 			}else if(req[39]==(byte)0xF1){

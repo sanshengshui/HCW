@@ -12,4 +12,5 @@ D:\workspace\opt\HCW\src\main\java\com\haro\netty\iot\staticOfFinal\NettyChannel
 D:\workspace\opt\HCW\src\main\java\com\haro\netty\iot\threadpool\ExecutorServiceFactory.java
 D:\workspace\opt\HCW\src\main\java\com\haro\netty\iot\netty\handler\StringProtocolInitalizer.java
 D:\workspace\opt\HCW\src\main\java\com\haro\netty\iot\netty\handler\HeartbeatHandler.java
+D:\workspace\opt\HCW\src\main\java\com\haro\netty\test\pojo\DeviceStatus.java
 D:\workspace\opt\HCW\src\main\java\com\haro\netty\util\ByteUtil.java
