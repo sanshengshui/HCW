@@ -2,6 +2,8 @@ package com.haro.netty.iot.netty.handler;
 
 
 import com.haro.netty.iot.staticOfFinal.NettyChannelMap;
+import com.haro.netty.iot.thread.SaveDeviceIccidTask;
+import com.haro.netty.iot.threadpool.ExecutorProcessPool;
 import io.netty.channel.socket.SocketChannel;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -185,6 +187,8 @@ public class ServerHandler extends  ChannelInboundHandlerAdapter {
 			  String reqDataTe=bytesToHexString(reqDataT);
 			 NettyChannelMap.channelMap.put(reqDataTe,(SocketChannel) ctx.channel());
 			  logger.info(reqDataTe);
+				ExecutorProcessPool pool =ExecutorProcessPool.getInstance();
+				pool.execute(new SaveDeviceIccidTask(req));
 
 
 

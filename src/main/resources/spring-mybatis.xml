@@ -21,6 +21,7 @@ http://www.springframework.org/schema/aop/spring-aop-3.0.xsd http://www.springfr
 
     <!-- 配置数据源，使用的是alibaba的Druid(德鲁伊)数据源 -->
     <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource" init-method="init" destroy-method="close">
+        <property name="driverClassName" value="${driverClassName}"/>
         <property name="url" value="${jdbc_url}" />
         <property name="username" value="${jdbc_username}" />
         <property name="password" value="${jdbc_password}" />
@@ -69,8 +70,12 @@ http://www.springframework.org/schema/aop/spring-aop-3.0.xsd http://www.springfr
         UserMapper.xml位于me.gacl.mapping包下，这样UserMapper.xml就可以被自动扫描
         /netty/src/main/java/com/haro/netty/test/mapper/TUserMapper.xml
          -->
+        <property name="typeAliasesPackage" value="com.haro.netty.test.pojo"/>
+        <!--
         <property name="mapperLocations" value="classpath:com/haro/netty/test/mapper/*.xml" />
+        -->
     </bean>
+
     <!-- 配置扫描器 -->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
         <!-- 扫描me.gacl.dao这个包以及它的子包下的所有映射接口类/netty/src/main/java/com/haro/netty/test/mapper/TUserMapper.java -->

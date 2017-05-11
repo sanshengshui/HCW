@@ -5,6 +5,8 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
+import com.haro.netty.service.DeviceStatusService;
+import com.haro.netty.service.Impl.DeviceStatusServiceImpl;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -47,6 +49,7 @@ import io.netty.handler.codec.string.StringEncoder;
  */
 @Configuration
 @ComponentScan("com.haro.netty")
+@MapperScan(basePackages = {"com.haro.netty.test.mapper"})
 @PropertySource("classpath:netty-server.properties")
 public class SpringConfig {
 	@Value("${boss.thread.count}")
@@ -129,4 +132,11 @@ public class SpringConfig {
 	public static PropertySourcesPlaceholderConfigurer propertyPlaceholderConfigurer() {
 		return new PropertySourcesPlaceholderConfigurer();
 	}
+
+	@Bean
+	public DeviceStatusService deviceStatusService(){
+		return new DeviceStatusServiceImpl();
+	}
+
+
 }

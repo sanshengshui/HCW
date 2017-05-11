@@ -3,21 +3,34 @@ package com.haro.netty.test.pojo;
 import java.util.Date;
 
 /**
- * Created by 123 on 2017/5/8.
+ * Created by 123 on 2017/5/11.
  */
 public class DeviceStatus {
+
     private int eqp_id;
+
     private Date create_time;
+
     private int deleted;
+
     private String eqp_comid;
+
     private int location_id;
+
     private String eqp_location;
+
     private int brand_id;
+
     private int eqptype_id;
+
     private int card_reader;
+
     private Date install_time;
+
     private String iccid;
+
     private int status_id;
+
     private int check_status;
 
     public int getEqp_id() {

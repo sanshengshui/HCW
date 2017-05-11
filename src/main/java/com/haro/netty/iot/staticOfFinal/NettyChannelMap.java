@@ -10,5 +10,4 @@ import java.util.Map;
  */
 public class NettyChannelMap {
     public static Map<String,SocketChannel> channelMap=new ConcurrentHashMap<String, SocketChannel>();
-
 }
