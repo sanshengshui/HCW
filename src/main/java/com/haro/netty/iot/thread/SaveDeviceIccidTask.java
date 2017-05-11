@@ -31,18 +31,37 @@ public class SaveDeviceIccidTask implements Runnable{
     }
 
     public void run() {
-        DeviceStatus deviceBasicInfo=new DeviceStatus();
-        /**
-         * Iccid
-         */
-        byte[] reqDataComid=new byte[13];
-        System.arraycopy(readbuf,5,reqDataComid,0,13);
-        String strReqDataComid=bytesToHexString(reqDataComid).replaceAll(" ","");
-        deviceBasicInfo.setEqp_comid(strReqDataComid);
-        byte[] reqDataIccid=new byte[20];
-        System.arraycopy(readbuf,18,reqDataIccid,0,20);
-        String  strReqDataIccid=bytesToHexString(reqDataIccid).replaceAll(" ","").replaceAll("3","");
-        deviceBasicInfo.setIccid(strReqDataIccid);
+          DeviceStatus deviceBasicInfo=new DeviceStatus();
+
+        try{
+
+            /**
+             * Iccid
+             */
+            byte[] reqDataComid=new byte[13];
+            System.arraycopy(readbuf,5,reqDataComid,0,13);
+            String strReqDataComid=bytesToHexString(reqDataComid).replaceAll(" ","");
+            deviceBasicInfo.setEqp_comid(strReqDataComid);
+            byte[] reqDataIccid=new byte[20];
+            System.arraycopy(readbuf,18,reqDataIccid,0,20);
+            String  strReqDataIccid=bytesToHexString(reqDataIccid).replaceAll(" ","").replaceAll("3","");
+            deviceBasicInfo.setIccid(strReqDataIccid);
+            //==============更新设备状态=====================
+            switch (readbuf[42]) {
+                //空闲
+                case 0x0C:
+                    deviceBasicInfo.setStatus_id(1);
+                    break;
+                //忙碌
+                case 0x3C:
+                    deviceBasicInfo.setStatus_id(2);
+                    break;
+            }
+
+
+        }catch (Exception e){
+            logger.error(e.getMessage());
+        }
 
 
         DeviceStatusService deviceStatusService =(DeviceStatusService) SpringUtil.getApplicationContext().getBean("deviceDeviceIccid");
