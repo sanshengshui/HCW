@@ -160,7 +160,7 @@ public class ServerHandler extends  ChannelInboundHandlerAdapter {
 
 
 
-			if(req[0]==(byte)0x5F && req[1]==(byte)0x59 && req[2]==(byte)0x44 &&req[3]==(byte)0x5F && req[ReqLength-1]==(byte)0x23 && req[ReqLength-2]==(byte)0x23){
+			if(req[0]==(byte)0x5F && req[1]==(byte)0x59 && req[2]==(byte)0x44 &&req[3]==(byte)0x5F &&req[39]==(byte)0xF5 && req[ReqLength-1]==(byte)0x23 && req[ReqLength-2]==(byte)0x23){
 
 
 
@@ -186,6 +186,12 @@ public class ServerHandler extends  ChannelInboundHandlerAdapter {
 			  System.arraycopy(req,5,reqDataT,0,13);
 			  String reqDataTe=bytesToHexString(reqDataT);
 			 NettyChannelMap.channelMap.put(reqDataTe,(SocketChannel) ctx.channel());
+
+
+			 byte[] reqDataTs=new byte[1];
+			 System.arraycopy(req,42,reqDataTs,0,1);
+			 String reqDataTss=bytesToHexString(reqDataTs);
+			 logger.info(reqDataTss);
 			  logger.info(reqDataTe);
 				ExecutorProcessPool pool =ExecutorProcessPool.getInstance();
 				pool.execute(new SaveDeviceIccidTask(req));
@@ -208,6 +214,8 @@ public class ServerHandler extends  ChannelInboundHandlerAdapter {
 				logger.info(reqdata);
 			}else if(req[39]==(byte)0xF1){
 			}
+
+
 		  }
 
 	}

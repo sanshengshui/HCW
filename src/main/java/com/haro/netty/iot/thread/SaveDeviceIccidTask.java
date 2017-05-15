@@ -46,17 +46,21 @@ public class SaveDeviceIccidTask implements Runnable{
             System.arraycopy(readbuf,18,reqDataIccid,0,20);
             String  strReqDataIccid=bytesToHexString(reqDataIccid).replaceAll(" ","").replaceAll("3","");
             deviceBasicInfo.setIccid(strReqDataIccid);
+            deviceBasicInfo.setDeleted(0);
             //==============更新设备状态=====================
-            switch (readbuf[42]) {
-                //空闲
-                case 0x0C:
-                    deviceBasicInfo.setStatus_id(1);
-                    break;
-                //忙碌
-                case 0x3C:
-                    deviceBasicInfo.setStatus_id(2);
-                    break;
+
+            if((readbuf[42]&0x30)==0x00){
+                deviceBasicInfo.setStatuscy_id(1);
+                //deviceBasicInfo.setStatus_id(1);
+            }else if ((readbuf[42]&0x30)==0x30){
+                deviceBasicInfo.setStatuscy_id(2);
+                //deviceBasicInfo.setStatus_id(2);
+            }else {
+                deviceBasicInfo.setStatuscy_id(1);
+                //deviceBasicInfo.setStatus_id(1);
             }
+
+
 
 
         }catch (Exception e){

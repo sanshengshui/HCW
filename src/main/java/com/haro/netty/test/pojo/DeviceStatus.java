@@ -33,6 +33,16 @@ public class DeviceStatus {
 
     private int check_status;
 
+    private int statuscy_id;
+
+    public int getStatuscy_id() {
+        return statuscy_id;
+    }
+
+    public void setStatuscy_id(int statuscy_id) {
+        this.statuscy_id = statuscy_id;
+    }
+
     public int getEqp_id() {
         return eqp_id;
     }

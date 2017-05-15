@@ -231,7 +231,7 @@
                 <artifactId>tomcat7-maven-plugin</artifactId>
                 <version>2.2</version>
                 <configuration>
-                    <port>8081</port>
+                    <port>8084</port>
                     <path>/</path>
                     <uriEncoding>UTF-8</uriEncoding>
                 </configuration>
