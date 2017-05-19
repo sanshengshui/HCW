@@ -1,6 +1,6 @@
 package com.haro.netty.service.Impl;
 
-import com.haro.netty.service.DeviceStatusService;
+import com.haro.netty.service.StatusDeviceService;
 import com.haro.netty.test.mapper.DeviceStatusMapper;
 import com.haro.netty.test.pojo.DeviceStatus;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,12 +8,11 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 /**
- * Created by 123 on 2017/5/11.
+ * Created by 123 on 2017/5/19.
  */
-@Service("deviceDeviceIccid")
+@Service("deviceDeviceStatus")
 @Transactional
-public class DeviceStatusServiceImpl implements DeviceStatusService {
-
+public class StatusDeviceServiceImpl implements StatusDeviceService {
     @Autowired
     private DeviceStatusMapper deviceStatusMapper;
 
@@ -21,8 +20,8 @@ public class DeviceStatusServiceImpl implements DeviceStatusService {
         this.deviceStatusMapper = deviceStatusMapper;
     }
 
-    public void updateIotDeviceIccid(DeviceStatus deviceBasicInfo) {
-         deviceStatusMapper.updateIotDeviceIccid(deviceBasicInfo);
-    }
+    public void updateIotDeviceStatus(DeviceStatus deviceStatus) {
+        deviceStatusMapper.updateIotDeviceStatus(deviceStatus);
 
+    }
 }

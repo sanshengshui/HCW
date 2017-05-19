@@ -13,4 +13,9 @@ public interface DeviceStatusMapper {
             "     " +
             "        WHERE eqp_comid=#{eqp_comid} AND status_id !=3")
     void updateIotDeviceIccid(DeviceStatus deviceBasicInfo);
+
+    @Update(" UPDATE eqp_basicinfo \n" +
+            "        SET status_id=5 \n" +
+            "        WHERE eqp_comid=#{eqp_comid} AND status_id!=2")
+    void updateIotDeviceStatus(DeviceStatus deviceStatus);
 }

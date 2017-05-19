@@ -7,4 +7,6 @@ import com.haro.netty.test.pojo.DeviceStatus;
  */
 public interface DeviceStatusService {
     void updateIotDeviceIccid(DeviceStatus deviceBasicInfo);
+
+
 }

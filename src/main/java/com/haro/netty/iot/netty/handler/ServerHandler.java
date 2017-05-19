@@ -3,7 +3,12 @@ package com.haro.netty.iot.netty.handler;
 
 import com.haro.netty.iot.staticOfFinal.NettyChannelMap;
 import com.haro.netty.iot.thread.SaveDeviceIccidTask;
+import com.haro.netty.iot.thread.UpdateDeviceStatusTask;
 import com.haro.netty.iot.threadpool.ExecutorProcessPool;
+import com.haro.netty.service.DeviceStatusService;
+import com.haro.netty.service.StatusDeviceService;
+import com.haro.netty.test.pojo.DeviceStatus;
+import com.haro.netty.util.SpringUtil;
 import io.netty.channel.socket.SocketChannel;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -82,6 +87,15 @@ public class ServerHandler extends  ChannelInboundHandlerAdapter {
 		// TODO Auto-generated method stub
 		super.channelInactive(ctx);
 		logger.info("client: "+ ctx.channel().remoteAddress()+ "channelInactive");
+		String commidlovesss=NettyChannelMap.comidMap.get(ctx.channel()).replaceAll(" ","");
+		logger.info(commidlovesss);
+		StatusDeviceService statusDeviceService =(StatusDeviceService) SpringUtil.getApplicationContext().getBean("deviceDeviceStatus");
+		DeviceStatus deviceStatus=new DeviceStatus();
+		deviceStatus.setEqp_comid(commidlovesss);
+		statusDeviceService.updateIotDeviceStatus(deviceStatus);
+
+
+
 
 
 	}
@@ -192,6 +206,7 @@ public class ServerHandler extends  ChannelInboundHandlerAdapter {
 			  System.arraycopy(req,5,reqDataT,0,13);
 			  String reqDataTe=bytesToHexString(reqDataT);
 			 NettyChannelMap.channelMap.put(reqDataTe,(SocketChannel) ctx.channel());
+			 NettyChannelMap.comidMap.put((SocketChannel)ctx.channel(),reqDataTe);
 			 
 			 
 			 
