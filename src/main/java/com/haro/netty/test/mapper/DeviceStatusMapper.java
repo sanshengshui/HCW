@@ -9,9 +9,8 @@ import org.apache.ibatis.annotations.Update;
 public interface DeviceStatusMapper {
 
     @Update(" UPDATE eqp_basicinfo\n" +
-            "        SET iccid=#{iccid},\n" +
-            "        status_id=#{status_id},\n" +
-            "        deleted=#{deleted}" +
+            "        SET iccid=#{iccid}, status_id=#{status_id} \n" +
+            "     " +
             "        WHERE eqp_comid=#{eqp_comid} AND status_id !=3")
     void updateIotDeviceIccid(DeviceStatus deviceBasicInfo);
 }
