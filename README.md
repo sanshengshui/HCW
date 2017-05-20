@@ -1,13 +1,14 @@
-##优雅的物联网架构
-```
-[Netty](https://github.com/netty/netty)
+<h1>优雅的物联网架构</h1>
+<p>技术选型:</p>
 
-Maven
-Spring
-Mybatis(最少配置方案)
-Druid(数据源配置 sql防注入 sql性能监控)
-持续更新中 @>+++++++<@
-```
+- [Netty](https://github.com/netty/netty)
+- Maven
+- Spring
+- Mybatis(最少配置方案)
+- Druid(数据源配置 sql防注入 sql性能监控)
+- 持续更新中 @>+++++++<@
+<hr />
+
 [Druid](https://github.com/alibaba/druid)号称是Java语言中最好的数据库连接池
 ```
 1 可以监控数据库访问性能，Druid内置提供了一个功能强大的StatFilter插件，能够详细统计SQL的执行性能，这对于线上分析数据库
