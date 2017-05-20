@@ -1,0 +1,27 @@
+[mylog-info][INFO] [2017-05-20 16:10:10] org.springframework.web.context.ContextLoader.initWebApplicationContext(305) | Root WebApplicationContext: initialization started
+   [mylog-info][INFO] [2017-05-20 16:10:10] org.springframework.context.support.AbstractApplicationContext.prepareRefresh(578) | Refreshing Root WebApplicationContext: startup date [Sat May 20 16:10:10 CST 2017]; root of context hierarchy
+   [mylog-info][INFO] [2017-05-20 16:10:10] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317) | Loading XML bean definitions from class path resource [spring.xml]
+   [mylog-info][INFO] [2017-05-20 16:10:11] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317) | Loading XML bean definitions from class path resource [spring-mybatis.xml]
+   [mylog-info][WARN] [2017-05-20 16:10:11] org.mybatis.spring.mapper.ClassPathMapperScanner.checkCandidate(226) | Skipping MapperFactoryBean with name 'deviceStatusMapper' and 'com.haro.netty.test.mapper.DeviceStatusMapper' mapperInterface. Bean already defined with the same name!
+   [mylog-info][WARN] [2017-05-20 16:10:11] org.mybatis.spring.mapper.ClassPathMapperScanner.doScan(158) | No MyBatis mapper was found in '[com.haro.netty.test.mapper]' package. Please check your configuration.
+   [mylog-info][INFO] [2017-05-20 16:10:11] org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(172) | Loading properties file from class path resource [dbconfig.properties]
+   [mylog-info][INFO] [2017-05-20 16:10:11] org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(153) | JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+   [mylog-info][INFO] [2017-05-20 16:10:12] com.alibaba.druid.pool.DruidDataSource.init(655) | {dataSource-1} inited
+   [mylog-info][INFO] [2017-05-20 16:10:13] org.springframework.web.context.ContextLoader.initWebApplicationContext(345) | Root WebApplicationContext: initialization completed in 3135 ms
+   [mylog-info][INFO] [2017-05-20 16:15:59] com.haro.netty.iot.netty.handler.ServerHandler.channelRegistered(54) | client: /127.0.0.1:55444channelRegistered
+   [mylog-info][INFO] [2017-05-20 16:15:59] com.haro.netty.iot.netty.handler.ServerHandler.channelActive(82) | client: /127.0.0.1:55444channelInactive
+   [mylog-info][INFO] [2017-05-20 16:18:58] com.haro.netty.iot.netty.handler.ServerHandler.channelRead(186) | 0C 
+   [mylog-info][INFO] [2017-05-20 16:18:58] com.haro.netty.iot.netty.handler.ServerHandler.channelRead(215) | EE 00 00 00 00 AA BB CC 11 22 33 55 00 
+   [mylog-info][INFO] [2017-05-20 16:18:58] com.haro.netty.iot.netty.handler.ServerHandler.channelRead(231) | 5F 59 44 5F 02 EE 00 00 00 00 AA BB CC 11 22 33 55 00 38 39 38 36 30 36 31 36 30 32 30 30 34 32 36 38 39 35 37 35 03 F5 02 00 0C 00 23 23 
+   [mylog-info][INFO] [2017-05-20 16:18:58] com.haro.netty.iot.netty.handler.ServerHandler.channelRead(233) | 5F 59 44 5F 02 EE 00 00 00 00 AA BB CC 11 22 33 55 00 38 39 38 36 30 36 31 36 30 32 30 30 34 32 36 38 39 35 37 35 03 F6 00 00 23 23 
+   [mylog-info][INFO] [2017-05-20 16:19:38] com.haro.netty.iot.netty.handler.ServerHandler.channelRead(186) | 0C 
+   [mylog-info][INFO] [2017-05-20 16:19:38] com.haro.netty.iot.netty.handler.ServerHandler.channelRead(215) | EE 00 00 00 00 AA BB CC 11 22 33 55 00 
+   [mylog-info][INFO] [2017-05-20 16:19:38] com.haro.netty.iot.netty.handler.ServerHandler.channelRead(231) | 5F 59 44 5F 02 EE 00 00 00 00 AA BB CC 11 22 33 55 00 38 39 38 36 30 36 31 36 30 32 30 30 34 32 36 38 39 35 37 35 03 F5 02 00 0C 00 23 23 
+   [mylog-info][INFO] [2017-05-20 16:19:38] com.haro.netty.iot.netty.handler.ServerHandler.channelRead(233) | 5F 59 44 5F 02 EE 00 00 00 00 AA BB CC 11 22 33 55 00 38 39 38 36 30 36 31 36 30 32 30 30 34 32 36 38 39 35 37 35 03 F6 00 00 23 23 
+   [mylog-info][INFO] [2017-05-20 16:19:39] com.haro.netty.iot.netty.handler.ServerHandler.channelRead(186) | 0C 
+   [mylog-info][INFO] [2017-05-20 16:19:39] com.haro.netty.iot.netty.handler.ServerHandler.channelRead(215) | EE 00 00 00 00 AA BB CC 11 22 33 55 00 
+   [mylog-info][INFO] [2017-05-20 16:19:39] com.haro.netty.iot.netty.handler.ServerHandler.channelRead(231) | 5F 59 44 5F 02 EE 00 00 00 00 AA BB CC 11 22 33 55 00 38 39 38 36 30 36 31 36 30 32 30 30 34 32 36 38 39 35 37 35 03 F5 02 00 0C 00 23 23 
+   [mylog-info][INFO] [2017-05-20 16:19:39] com.haro.netty.iot.netty.handler.ServerHandler.channelRead(233) | 5F 59 44 5F 02 EE 00 00 00 00 AA BB CC 11 22 33 55 00 38 39 38 36 30 36 31 36 30 32 30 30 34 32 36 38 39 35 37 35 03 F6 00 00 23 23 
+   [mylog-info][INFO] [2017-05-20 16:20:59] com.haro.netty.iot.netty.handler.ServerHandler.channelInactive(96) | client: /127.0.0.1:55444channelInactive
+   [mylog-info][INFO] [2017-05-20 16:20:59] com.haro.netty.iot.netty.handler.ServerHandler.channelUnregistered(66) | EE00000000AABBCC1122335500
+   

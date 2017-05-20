@@ -1,6 +1,7 @@
 ##优雅的物联网架构
 ```
-Netty
+[Netty](https://github.com/netty/netty)
+
 Maven
 Spring
 Mybatis(最少配置方案)
@@ -73,3 +74,5 @@ init-method="init" destroy-method="close">
     <property name="filters" value="stat" />   
 </bean>  
 ```
+**添加之后的效果如下：**<br/>
+![Druid Monitor](picture/1.PNG)

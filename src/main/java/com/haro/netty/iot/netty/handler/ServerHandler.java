@@ -60,7 +60,14 @@ public class ServerHandler extends  ChannelInboundHandlerAdapter {
 	@Override
 	public void channelUnregistered(ChannelHandlerContext ctx) throws Exception {
 		// TODO Auto-generated method stub
-		super.channelUnregistered(ctx);
+		//super.channelUnregistered(ctx);
+
+		String commidlovesss=NettyChannelMap.comidMap.get(ctx.channel()).replaceAll(" ","");
+		logger.info(commidlovesss);
+		StatusDeviceService statusDeviceService =(StatusDeviceService) SpringUtil.getApplicationContext().getBean("deviceDeviceStatus");
+		DeviceStatus deviceStatus=new DeviceStatus();
+		deviceStatus.setEqp_comid(commidlovesss);
+		statusDeviceService.updateIotDeviceStatus(deviceStatus);
 
 
 	}
@@ -87,12 +94,7 @@ public class ServerHandler extends  ChannelInboundHandlerAdapter {
 		// TODO Auto-generated method stub
 		super.channelInactive(ctx);
 		logger.info("client: "+ ctx.channel().remoteAddress()+ "channelInactive");
-		String commidlovesss=NettyChannelMap.comidMap.get(ctx.channel()).replaceAll(" ","");
-		logger.info(commidlovesss);
-		StatusDeviceService statusDeviceService =(StatusDeviceService) SpringUtil.getApplicationContext().getBean("deviceDeviceStatus");
-		DeviceStatus deviceStatus=new DeviceStatus();
-		deviceStatus.setEqp_comid(commidlovesss);
-		statusDeviceService.updateIotDeviceStatus(deviceStatus);
+
 
 
 
