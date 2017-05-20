@@ -6,10 +6,24 @@
 - Spring
 - Mybatis(最少配置方案)
 - Druid(数据源配置 sql防注入 sql性能监控)
+- Google Protobuf解编码框架
 - 持续更新中 @>+++++++<@
+<hr/>
+
+<h2>Google的[Protobuf](https://github.com/google/protobuf)在业界非常流行</h2>
+
+```
+(1)在谷歌内部长期使用，产品成熟度高;
+(2)跨语言 支持多种语言，包括C++,Java和Python;
+(3)编码后的消息更小，更加有利于存储和传输;
+(4)编解码的性能非常高;
+(5)支持不同协议的前向兼容;
+(6)支持定义可选和必选字段。
+```
+
 <hr />
 
-[Druid](https://github.com/alibaba/druid)号称是Java语言中最好的数据库连接池
+<h2>[Druid](https://github.com/alibaba/druid)号称是Java语言中最好的数据库连接池</h2>
 ```
 1 可以监控数据库访问性能，Druid内置提供了一个功能强大的StatFilter插件，能够详细统计SQL的执行性能，这对于线上分析数据库
 访问性能有帮助。
@@ -77,3 +91,4 @@ init-method="init" destroy-method="close">
 ```
 **添加之后的效果如下：**<br/>
 ![Druid Monitor](picture/1.PNG)
+<hr />
