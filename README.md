@@ -10,7 +10,7 @@
 - 持续更新中 @>+++++++<@
 <hr/>
 
-<h2>Google的[Protobuf](https://github.com/google/protobuf)在业界非常流行</h2>
+Google的[Protobuf](https://github.com/google/protobuf)在业界非常流行
 
 ```
 (1)在谷歌内部长期使用，产品成熟度高;
@@ -23,7 +23,7 @@
 
 <hr />
 
-<h2>[Druid](https://github.com/alibaba/druid)号称是Java语言中最好的数据库连接池</h2>
+[Druid](https://github.com/alibaba/druid)号称是Java语言中最好的数据库连接池
 ```
 1 可以监控数据库访问性能，Druid内置提供了一个功能强大的StatFilter插件，能够详细统计SQL的执行性能，这对于线上分析数据库
 访问性能有帮助。
