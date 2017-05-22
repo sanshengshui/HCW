@@ -45,6 +45,7 @@
           <element id="library" level="project" name="Maven: io.netty:netty-all:4.1.6.Final" />
           <element id="library" level="project" name="Maven: com.aliyun:aliyun-java-sdk-core:2.4.2" />
           <element id="library" level="project" name="Maven: com.aliyun:aliyun-java-sdk-sms:3.0.0-rc1" />
+          <element id="library" level="project" name="Maven: com.google.protobuf:protobuf-java:3.2.0" />
         </element>
       </element>
       <element id="directory" name="META-INF">

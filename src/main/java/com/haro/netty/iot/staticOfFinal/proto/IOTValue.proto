@@ -1,0 +1,16 @@
+syntax="proto3";
+option java_package="com.haro.netty.iot.staticOfFinal.proto";
+option java_outer_classname="IOTValueProto";
+
+
+message IOTValue{
+    bytes frame_head=1;
+    bytes dir=2;
+    bytes CommunicationID=3;
+    bytes SIMCCID=4;
+    bytes Produc=5;
+    bytes comm=6;
+    bytes data_length=7;
+    bytes data=8;
+    bytes frame_tail=9;
+}
