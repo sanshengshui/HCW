@@ -4,7 +4,11 @@ import com.haro.netty.test.pojo.DeviceStatus;
 import org.apache.ibatis.annotations.Update;
 
 /**
- * Created by 123 on 2017/5/11.
+ * @author 穆书伟
+ * @description 利用mybatis注释sql映射到数据库
+ * @date 2017-5-22 17:56
+ * @comment  updateIotDeviceIccid 把设备的设备通讯码保存到数据库中
+ *             updateIotDeviceStatus 实时更新设备状态
  */
 public interface DeviceStatusMapper {
 

@@ -11,7 +11,9 @@ import org.slf4j.LoggerFactory;
 import static com.haro.netty.util.ByteUtil.bytesToHexString;
 
 /**
- * Created by 123 on 2017/5/11.
+ * @author 穆书伟
+ * @descriptin 更新设备状态
+ * @date 2017/5/22 18:40
  */
 public class SaveDeviceIccidTask implements Runnable{
 

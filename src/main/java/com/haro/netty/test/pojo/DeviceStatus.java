@@ -3,7 +3,9 @@ package com.haro.netty.test.pojo;
 import java.util.Date;
 
 /**
- * Created by 123 on 2017/5/11.
+ * @author 穆书伟
+ * @description domain类
+ * @date 2017/5/22 18:35
  */
 public class DeviceStatus {
 

@@ -6,7 +6,9 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.Map;
 
 /**
- * Created by 123 on 2017/4/23.
+ * @author 穆书伟
+ * @description 将设备的mac地址和socket绑定到一起 利用此socket向设备发送数据
+ * @date 2017/5/22 18:43
  */
 public class NettyChannelMap {
     public static Map<String,SocketChannel> channelMap=new ConcurrentHashMap<String, SocketChannel>();

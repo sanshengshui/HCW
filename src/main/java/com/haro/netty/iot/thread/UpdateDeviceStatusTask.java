@@ -8,7 +8,9 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * Created by 123 on 2017/5/19.
+ * @author 穆书伟
+ * @description 更新设备状态
+ * @date 2017/5/22 18:39
  */
 public class UpdateDeviceStatusTask implements Runnable {
     private static final Logger logger= LoggerFactory.getLogger(UpdateDeviceStatusTask.class);

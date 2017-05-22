@@ -8,7 +8,9 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 /**
- * Created by 123 on 2017/5/19.
+ * @author 穆书伟
+ * @descriptin 服务接口实现类Impl
+ * @date 2017/5/22 18:37
  */
 @Service("deviceDeviceStatus")
 @Transactional

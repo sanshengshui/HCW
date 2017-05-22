@@ -19,7 +19,7 @@ import java.sql.*;
  * 
 * @ClassName: StringProtocolInitalizer  
 * @Description: TODO  Just a dummy protocol mainly to show the ServerBootstrap being initialized.
-* @author 单雨连
+* @author 穆书伟
 * @Email shanyulian@aliyun.com 
 * @date 2017年1月13日 上午10:27:24
  */
