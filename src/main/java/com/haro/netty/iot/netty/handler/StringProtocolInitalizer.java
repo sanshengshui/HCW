@@ -43,6 +43,7 @@ public class StringProtocolInitalizer extends ChannelInitializer<SocketChannel>{
 
 
 		pipeline.addLast("handler", serverHandler);
+		pipeline.addLast("heartbeatHandler",new HeartbeatHandler(25));//心跳包检测机制60s
 	}
 
 

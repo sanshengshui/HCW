@@ -61,6 +61,7 @@ public class ServerHandler extends  ChannelInboundHandlerAdapter {
 	public void channelUnregistered(ChannelHandlerContext ctx) throws Exception {
 		// TODO Auto-generated method stub
 		//super.channelUnregistered(ctx);
+		logger.info("client: "+ctx.channel().remoteAddress()+"channelUnregistered");
 
 		String commidlovesss=NettyChannelMap.comidMap.get(ctx.channel()).replaceAll(" ","");
 		logger.info(commidlovesss);
@@ -68,6 +69,7 @@ public class ServerHandler extends  ChannelInboundHandlerAdapter {
 		DeviceStatus deviceStatus=new DeviceStatus();
 		deviceStatus.setEqp_comid(commidlovesss);
 		statusDeviceService.updateIotDeviceStatus(deviceStatus);
+
 
 
 	}
