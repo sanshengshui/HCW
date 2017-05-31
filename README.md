@@ -7,6 +7,7 @@
 - Mybatis(最少配置方案)
 - Druid(数据源配置 sql防注入 sql性能监控)
 - Google Protobuf解编码框架
+- Quartz时间调度
 - 持续更新中 @>+++++++<@
 <hr/>
 Netty基本功能实现：

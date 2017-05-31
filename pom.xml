@@ -226,10 +226,8 @@
 
     <build>
         <finalName>netty</finalName>
+
         <plugins>
-
-
-
             <!-- tomcat7插件 -->
             <plugin>
                 <groupId>org.apache.tomcat.maven</groupId>
@@ -243,6 +241,7 @@
             </plugin>
 
         </plugins>
+
         <resources>
             <resource>
                 <directory>src/main/java</directory>
