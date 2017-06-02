@@ -6,10 +6,34 @@
 - Spring
 - Mybatis(最少配置方案)
 - Druid(数据源配置 sql防注入 sql性能监控)
-- Google Protobuf解编码框架
+- Google Protobuf解编码框架 Prostostuff：它基于Protobuf序列化框架，面向POJO，无需编写.proto文件。
 - Quartz时间调度
+- RPC(远程过程调用)
+- ZooKeeper(未实现)：提供服务注册与发现功能，开发分布式系统的必备选择，同时它也具备天生的集群能力。
 - 持续更新中 @>+++++++<@
 <hr/>
+
+RPC,即Remote Proceduce Call(远程过程调用)，说的通俗一点就是:调用远程计算机上的服务,就像调用本地服务一样。
+
+```
+  RPC可基于HTTP或TCP协议，Web Service就是基于HTTP协议的RPC，它具有良好的跨平台性，但其性能却
+不如基于TCP协议的RPC。会2方面会直接影响RPC的性能，一是传输方式，二是序列化。
+众所周知，TCP是传输层协议，HTTP是应用层协议，而传输层较应用层更加底层，在数据传输方面，较底层越
+快，因此，在一般情况下，TCP一定比HTTP快。就序列化而言,Java提供了默认的序列化方式，但在高并发的情况
+下，这种方式将会带来一些性能上的瓶颈，于是市面上出现了一系列优秀的序列化框架，比如：Protobuf，Kryo,
+Hession，Jackson等，它们可以取代Java默认的序列化，从而提供更高效的性能。
+  为了支持高并发，传统的阻塞式IO显然不太合适，因此我们需要异步的IO，即NIO。Java提供了NIO的解决方案，
+Java7也提供了更优秀的NIO.2支持，用Java实现了NIO并不是遥不可及的事情，只是需要我们熟悉NIO的技术细节。
+  我们需要将服务器部署在分布式环境下的不同节点上，通过服务注册的方式，让客户端来自动发现当前可用的服务，
+并调用这些服务。这需要一种服务注册表(Service Registry)的组件，让它来注册分布式环境下所有的服务地址(
+包括：主机号与端口号)。
+  每台Server上可发布多个Service,这些Service共用一个host与port,在分布式环境下会提供Server共同对外提供
+Service。此外，为防止Service Registry出现单点故障，因此需要将其搭建为集群环境。
+```
+
+应用,服务，服务注册表之间的关系见下图:
+![RPC](picture/RPC.png)
+
 Netty基本功能实现：
 
 ```
