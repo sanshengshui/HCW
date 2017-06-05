@@ -13,7 +13,7 @@ import io.netty.handler.timeout.ReadTimeoutException;
 * @ClassName: HeartbeatHandler  
 * @Description: TODO  netty 心跳包检测机制
 * @author 穆书伟
-* @Email shanyulian@aliyun.com 
+* @Email lovewsic@gmail.com
 * @date 2017年1月13日 上午10:51:57
  */
 
