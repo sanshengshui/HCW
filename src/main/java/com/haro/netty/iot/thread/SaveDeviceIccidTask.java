@@ -1,6 +1,7 @@
 package com.haro.netty.iot.thread;
 
 
+import com.haro.netty.iot.staticOfFinal.proto.common.util.StringUtil;
 import com.haro.netty.service.DeviceStatusService;
 import com.haro.netty.test.pojo.DeviceStatus;
 import com.haro.netty.util.ByteUtil;
@@ -46,7 +47,7 @@ public class SaveDeviceIccidTask implements Runnable{
             deviceBasicInfo.setEqp_comid(strReqDataComid);
             byte[] reqDataIccid=new byte[20];
             System.arraycopy(readbuf,18,reqDataIccid,0,20);
-            String  strReqDataIccid=bytesToHexString(reqDataIccid).replaceAll(" ","").replaceAll("3","");
+            String  strReqDataIccid= StringUtil.queryEven(bytesToHexString(reqDataIccid).replaceAll(" ",""));
             deviceBasicInfo.setIccid(strReqDataIccid);
             //==============更新设备状态=====================
 			 if((readbuf[42]&0x30)==0x00){

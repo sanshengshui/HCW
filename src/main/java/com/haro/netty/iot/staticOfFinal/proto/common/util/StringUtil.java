@@ -31,4 +31,19 @@ public class StringUtil {
     public static String[] split(String str,String separator){
         return StringUtils.splitByWholeSeparator(str,separator);
     }
+
+    /**
+     * 字符串取偶位数
+     * @param str
+     * @return
+     */
+
+    public static String queryEven(String str){
+        char[] chars=str.toCharArray();
+        StringBuffer sb=new StringBuffer();
+        for (int i=1;i<chars.length;i+=2){
+            sb.append(chars[i]);
+        }
+        return sb.toString();
+    }
 }
