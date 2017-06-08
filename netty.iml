@@ -103,5 +103,6 @@
     <orderEntry type="library" name="Maven: io.netty:netty-all:4.1.6.Final" level="project" />
     <orderEntry type="library" name="Maven: com.aliyun:aliyun-java-sdk-core:2.4.2" level="project" />
     <orderEntry type="library" name="Maven: com.aliyun:aliyun-java-sdk-sms:3.0.0-rc1" level="project" />
+    <orderEntry type="library" name="DataExporterExtension" level="project" />
   </component>
 </module>
