@@ -33,6 +33,7 @@ public class StringUtil {
     }
 
     /**
+     * 3839383630363136303230303432363839353735 这样的16进制byte[].toString取值
      * 字符串取偶位数
      * @param str
      * @return
