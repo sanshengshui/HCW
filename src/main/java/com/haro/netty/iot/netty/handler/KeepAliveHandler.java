@@ -17,6 +17,7 @@ public class KeepAliveHandler extends SimpleChannelInboundHandler<RpcRequest> {
     protected void channelRead0(ChannelHandlerContext channelHandlerContext, RpcRequest rpcRequest) throws Exception {
         RpcResponse response=new RpcResponse();
         response.setFrame_head("_YD_");
+        response.setDir((byte)0x02);
 
     }
 }

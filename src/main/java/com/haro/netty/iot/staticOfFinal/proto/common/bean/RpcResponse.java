@@ -9,7 +9,7 @@ public class RpcResponse {
     //帧头
     private String frame_head;
     //方向
-    private String Dir;
+    private byte Dir;
     //身份码
     private String CommunicationID;
     //SIM卡编码
@@ -33,11 +33,11 @@ public class RpcResponse {
         this.frame_head = frame_head;
     }
 
-    public String getDir() {
+    public byte getDir() {
         return Dir;
     }
 
-    public void setDir(String dir) {
+    public void setDir(byte dir) {
         Dir = dir;
     }
 
