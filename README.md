@@ -136,4 +136,4 @@ init-method="init" destroy-method="close">
  1. client模块中的`client.Client`类提供了进行压力测试的方法，可以修改启动客户端连接的数量`Client.clientNum`，
  以及每秒向服务器发送的协议的频率`Client.frequency`进行压力测试。<br>
  2. CPU 8核E3-1231v3， 每个服务分配1G的堆内存，启动5000个客户端后(需要一定时间)，
- 不停给自己发送单聊协议，发现auth、logic、gate服务占用的cpu非常低，客户端能够立即收到响应。对应的TPS统计将在后续加入。<br>
+ 不停给自己发送协议消息，发现auth、logic、gate服务占用的cpu非常低，客户端能够立即收到响应。对应的TPS统计将在后续加入。<br>
