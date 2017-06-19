@@ -577,4 +577,24 @@
    [mylog-info][INFO] [2017-06-19 12:26:34] com.haro.netty.iot.netty.handler.ServerHandler.channelInactive(99) | client: /127.0.0.1:57919channelInactive
    [mylog-info][INFO] [2017-06-19 12:26:34] com.haro.netty.iot.netty.handler.ServerHandler.channelUnregistered(65) | client: /127.0.0.1:57919channelUnregistered
    [mylog-info][INFO] [2017-06-19 12:26:34] com.haro.netty.iot.netty.handler.ServerHandler.channelUnregistered(68) | EE00000000AABBCC0022334400
+   [mylog-info][INFO] [2017-06-19 17:42:02] org.springframework.web.context.ContextLoader.initWebApplicationContext(305) | Root WebApplicationContext: initialization started
+   [mylog-info][INFO] [2017-06-19 17:42:03] org.springframework.context.support.AbstractApplicationContext.prepareRefresh(578) | Refreshing Root WebApplicationContext: startup date [Mon Jun 19 17:42:03 CST 2017]; root of context hierarchy
+   [mylog-info][INFO] [2017-06-19 17:42:03] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317) | Loading XML bean definitions from class path resource [spring.xml]
+   [mylog-info][INFO] [2017-06-19 17:42:03] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317) | Loading XML bean definitions from class path resource [spring-mybatis.xml]
+   [mylog-info][WARN] [2017-06-19 17:42:03] org.mybatis.spring.mapper.ClassPathMapperScanner.checkCandidate(226) | Skipping MapperFactoryBean with name 'deviceStatusMapper' and 'com.haro.netty.test.mapper.DeviceStatusMapper' mapperInterface. Bean already defined with the same name!
+   [mylog-info][WARN] [2017-06-19 17:42:03] org.mybatis.spring.mapper.ClassPathMapperScanner.doScan(158) | No MyBatis mapper was found in '[com.haro.netty.test.mapper]' package. Please check your configuration.
+   [mylog-info][INFO] [2017-06-19 17:42:03] org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(172) | Loading properties file from class path resource [dbconfig.properties]
+   [mylog-info][INFO] [2017-06-19 17:42:03] org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(153) | JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+   [mylog-info][INFO] [2017-06-19 17:42:05] com.alibaba.druid.pool.DruidDataSource.init(655) | {dataSource-1} inited
+   [mylog-info][INFO] [2017-06-19 17:42:05] org.springframework.web.context.ContextLoader.initWebApplicationContext(345) | Root WebApplicationContext: initialization completed in 2717 ms
+   [mylog-info][INFO] [2017-06-19 17:43:04] org.springframework.web.context.ContextLoader.initWebApplicationContext(305) | Root WebApplicationContext: initialization started
+   [mylog-info][INFO] [2017-06-19 17:43:04] org.springframework.context.support.AbstractApplicationContext.prepareRefresh(578) | Refreshing Root WebApplicationContext: startup date [Mon Jun 19 17:43:04 CST 2017]; root of context hierarchy
+   [mylog-info][INFO] [2017-06-19 17:43:04] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317) | Loading XML bean definitions from class path resource [spring.xml]
+   [mylog-info][INFO] [2017-06-19 17:43:04] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317) | Loading XML bean definitions from class path resource [spring-mybatis.xml]
+   [mylog-info][WARN] [2017-06-19 17:43:04] org.mybatis.spring.mapper.ClassPathMapperScanner.checkCandidate(226) | Skipping MapperFactoryBean with name 'deviceStatusMapper' and 'com.haro.netty.test.mapper.DeviceStatusMapper' mapperInterface. Bean already defined with the same name!
+   [mylog-info][WARN] [2017-06-19 17:43:04] org.mybatis.spring.mapper.ClassPathMapperScanner.doScan(158) | No MyBatis mapper was found in '[com.haro.netty.test.mapper]' package. Please check your configuration.
+   [mylog-info][INFO] [2017-06-19 17:43:04] org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(172) | Loading properties file from class path resource [dbconfig.properties]
+   [mylog-info][INFO] [2017-06-19 17:43:04] org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(153) | JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+   [mylog-info][INFO] [2017-06-19 17:43:07] com.alibaba.druid.pool.DruidDataSource.init(655) | {dataSource-1} inited
+   [mylog-info][INFO] [2017-06-19 17:43:07] org.springframework.web.context.ContextLoader.initWebApplicationContext(345) | Root WebApplicationContext: initialization completed in 3114 ms
    

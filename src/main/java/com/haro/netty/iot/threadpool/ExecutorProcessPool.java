@@ -13,7 +13,7 @@ import org.springframework.stereotype.Component;
 public class ExecutorProcessPool {
 	private ExecutorService executor;
     private static ExecutorProcessPool pool = new ExecutorProcessPool();
-    private final int threadMax = 10;
+    private final int threadMax = 50;
 
     @PostConstruct
     public void start(){
