@@ -17,8 +17,12 @@ import io.netty.channel.ChannelFuture;
  * @description TCP 服务器
  * @date 2017/5/22 18:44
  */
+
 @Component
+
+
 public class TCPServer {
+
 	@Autowired
 	@Qualifier("serverBootstrap")
 	private ServerBootstrap b;

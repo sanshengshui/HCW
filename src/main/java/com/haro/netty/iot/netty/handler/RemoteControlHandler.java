@@ -8,4 +8,5 @@ import io.netty.channel.ChannelOutboundHandlerAdapter;
  * @date 2017/6/8 17:35
  */
 public class RemoteControlHandler extends ChannelOutboundHandlerAdapter{
+
 }

@@ -6,6 +6,7 @@ import com.haro.netty.iot.thread.SaveDeviceIccidTask;
 import com.haro.netty.iot.thread.UpdateDeviceStatusTask;
 import com.haro.netty.iot.threadpool.ExecutorProcessPool;
 import com.haro.netty.service.DeviceStatusService;
+import com.haro.netty.service.QueryStatusForLightService;
 import com.haro.netty.service.StatusDeviceService;
 import com.haro.netty.test.pojo.DeviceStatus;
 import com.haro.netty.util.SpringUtil;
@@ -118,6 +119,7 @@ public class ServerHandler extends  ChannelInboundHandlerAdapter {
 		  byte[]req = new byte[in.readableBytes()];
 		  int ReqLength=req.length;
 		  in.readBytes(req);
+
 		  /*
 		  byte a=(0x45);
 		  char c=(char)a;
@@ -178,24 +180,54 @@ public class ServerHandler extends  ChannelInboundHandlerAdapter {
 
 			if(req[0]==(byte)0x5F && req[1]==(byte)0x59 && req[2]==(byte)0x44 &&req[3]==(byte)0x5F && req[39]==(byte)0xF5 && req[ReqLength-1]==(byte)0x23 && req[ReqLength-2]==(byte)0x23){
 
+				/**
+				 * 添加控制灯的指令
+				 */
+
+
 
 			
 			 byte[] reqDataTs=new byte[1];
 			 System.arraycopy(req,42,reqDataTs,0,1);
 			 String reqDataTss=bytesToHexString(reqDataTs);
 			 logger.info(reqDataTss);
-			 
+
 			  ExecutorProcessPool pool =ExecutorProcessPool.getInstance();
 			  pool.execute(new SaveDeviceIccidTask(req));
 
 			  byte[] reqData=new byte[44];
+			  byte[] reqmsw = new byte[45];
+			  byte[] reqmsw1 = new byte[45];
+
 			  reqData[0]=(byte)0x5F;
 			  reqData[1]=(byte)0x59;
 			  reqData[2]=(byte)0x44;
 			  reqData[3]=(byte)0x5F;
 			  reqData[4]=(byte)0x02;
+
+				reqmsw[0]=(byte)0x5F;
+				reqmsw[1]=(byte)0x59;
+				reqmsw[2]=(byte)0x44;
+				reqmsw[3]=(byte)0x5F;
+				reqmsw[4]=(byte)0x02;
+
+				reqmsw1[0]=(byte)0x5F;
+				reqmsw1[1]=(byte)0x59;
+				reqmsw1[2]=(byte)0x44;
+				reqmsw1[3]=(byte)0x5F;
+				reqmsw1[4]=(byte)0x02;
+
 			  System.arraycopy(req,5,reqData,5,13);
 			  System.arraycopy(req,18,reqData,18,20);
+
+				System.arraycopy(req,5,reqmsw,5,13);
+				System.arraycopy(req,18,reqmsw,18,20);
+
+				System.arraycopy(req,5,reqData,5,13);
+				System.arraycopy(req,18,reqData,18,20);
+
+				System.arraycopy(req,5,reqmsw1,5,13);
+				System.arraycopy(req,18,reqmsw1,18,20);
 
 			  reqData[38]=(byte)0x03;
 			  reqData[39]=(byte)0xF6;
@@ -204,17 +236,70 @@ public class ServerHandler extends  ChannelInboundHandlerAdapter {
 			  reqData[42]=(byte)0x23;
 			  reqData[43]=(byte)0x23;
 
+				reqmsw[38]=(byte)0x03;
+				reqmsw[39]=(byte)0xF9;
+				reqmsw[40]=(byte)0x01;
+				reqmsw[41]=(byte)0x00;
+				reqmsw[42]=(byte)0x01;
+				reqmsw[43]=(byte)0x23;
+				reqmsw[44]=(byte)0x23;
+
+				reqmsw1[38]=(byte)0x03;
+				reqmsw1[39]=(byte)0xF9;
+				reqmsw1[40]=(byte)0x01;
+				reqmsw1[41]=(byte)0x00;
+				reqmsw1[42]=(byte)0x02;
+				reqmsw1[43]=(byte)0x23;
+				reqmsw1[44]=(byte)0x23;
+
+
+
+
 			  byte[] reqDataT=new byte[13];
 			  System.arraycopy(req,5,reqDataT,0,13);
 			  String reqDataTe=bytesToHexString(reqDataT);
+			  String reqDateTeModify=reqDataTe.replace(" ","");
+
+
+
 			 NettyChannelMap.channelMap.put(reqDataTe,(SocketChannel) ctx.channel());
 			 NettyChannelMap.comidMap.put((SocketChannel)ctx.channel(),reqDataTe);
 			 
 			 
-			 
-			  logger.info(reqDataTe);
-				
 
+			  logger.info(reqDataTe);
+			  logger.info(reqDateTeModify);
+
+
+
+
+
+				QueryStatusForLightService queryStatusForLightService=(QueryStatusForLightService) SpringUtil.getApplicationContext().getBean("deviceDeviceForLight");
+				int jamesmsw=queryStatusForLightService.SendCommandForLight(reqDateTeModify);
+				String Strjamesmsw=String.valueOf(jamesmsw);
+				logger.info(Strjamesmsw);
+
+
+
+
+
+				if(jamesmsw==3){
+					ByteBuf enjamesmsw=ctx.alloc().buffer(45);
+					enjamesmsw.writeBytes(reqmsw);
+					ctx.write(enjamesmsw);
+					ctx.flush();
+				}else if(jamesmsw ==4){
+					ByteBuf enjamesmsw=ctx.alloc().buffer(45);
+					enjamesmsw.writeBytes(reqmsw);
+					ctx.write(enjamesmsw);
+					ctx.flush();
+
+				}else{
+					ByteBuf enjamesmsw=ctx.alloc().buffer(45);
+					enjamesmsw.writeBytes(reqmsw1);
+					ctx.write(enjamesmsw);
+					ctx.flush();
+				}
 
 
 

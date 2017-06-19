@@ -1,6 +1,7 @@
 package com.haro.netty.test.mapper;
 
 import com.haro.netty.test.pojo.DeviceStatus;
+import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
 
 /**
@@ -22,4 +23,9 @@ public interface DeviceStatusMapper {
             "        SET status_id=5 \n" +
             "        WHERE eqp_comid=#{eqp_comid} AND status_id!=2")
     void updateIotDeviceStatus(DeviceStatus deviceStatus);
+
+    @Select(" SELECT status_id \n " +
+            " FROM eqp_basicinfo \n" +
+            " where eqp_comid=#{eqp_comid AND deleted=0")
+    int SendCommandForLight(String eqp_comid);
 }

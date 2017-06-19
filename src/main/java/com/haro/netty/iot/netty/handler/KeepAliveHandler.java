@@ -18,6 +18,10 @@ public class KeepAliveHandler extends SimpleChannelInboundHandler<RpcRequest> {
         RpcResponse response=new RpcResponse();
         response.setFrame_head("_YD_");
         response.setDir((byte)0x02);
+        response.setCommunicationID(rpcRequest.getCommunicationID());
+        response.setSIMCCID(rpcRequest.getSIMCCID());
+        response.setProduc(rpcRequest.getProduc());
+
 
     }
 }
