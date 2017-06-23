@@ -132,7 +132,17 @@ init-method="init" destroy-method="close">
 ![Druid Monitor](picture/1.PNG)
 <hr />
 
-## **二、压力测试**<br>
+## **二、测试**<br>
+
+###  单客户端测试以及调试功能(SingleTest)
+
+| frame_head    | Dir     | CommunicationID| SIMCCID | Produc  | Comm    | date_length | data | frame_tail|
+|:-------------:|:-------:|:--------------:|:-------:|:-------:|:-------:|：----------：|:----:|:---------:|
+| 帧头           | 方向    | 身份码          |SIM卡编码 |产品码    |功能码   |数据长度       |数据  | 帧尾       |
+|  4bytes       | 1bytes |   13 bytes      |20 bytes  | 1       |1 bytes | 2 bytes      |不固定 | 2bytes    |
+| _YD_          | 0x01   |    ----         |----      | 0x03    | 0x0A   | 详情如下      |---   | ##         |
+
+### 多客户端测试以及性能和压力测试
  1. client模块中的`client.Client`类提供了进行压力测试的方法，可以修改启动客户端连接的数量`Client.clientNum`，
  以及每秒向服务器发送的协议的频率`Client.frequency`进行压力测试。<br>
  2. CPU 8核E3-1231v3， 每个服务分配1G的堆内存，启动5000个客户端后(需要一定时间)，
