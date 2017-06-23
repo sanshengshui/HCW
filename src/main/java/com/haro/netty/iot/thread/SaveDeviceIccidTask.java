@@ -37,7 +37,6 @@ public class SaveDeviceIccidTask implements Runnable{
           DeviceStatus deviceBasicInfo=new DeviceStatus();
 
         try{
-
             /**
              * Iccid
              */
