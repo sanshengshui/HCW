@@ -144,6 +144,11 @@ init-method="init" destroy-method="close">
 | _YD_          | 0x01   |    ----         |----      | 0x03    | 0x0A   | 详情如下      |---   | ##         |
 
 
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
 
 ### 多客户端测试以及性能和压力测试
  1. client模块中的`client.Client`类提供了进行压力测试的方法，可以修改启动客户端连接的数量`Client.clientNum`，
