@@ -141,26 +141,15 @@ init-method="init" destroy-method="close">
       <td></td>
       <td>frame_head</td>
       <td>Dir</td>
-      <td>Communic</td>
-      <td>SIM</td>
+      <td>CommunicationID</td>
+      <td>SIMCCID</td>
       <td>Produc</td>
-      <td>comm.</td>
+      <td>comm</td>
       <td>data_length</td>
       <td>data</td>
       <td>frame_tail</td>
    </tr>
-   <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>ationID</td>
-      <td>CCID</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-   </tr>
+  
    <tr>
       <td></td>
       <td>帧头</td>
@@ -174,7 +163,7 @@ init-method="init" destroy-method="close">
       <td>帧尾</td>
    </tr>
    <tr>
-      <td>占用长度</td>
+      <td>占用长度(字节)</td>
       <td>4 bytes</td>
       <td>1 byte</td>
       <td>13byte</td>
@@ -186,19 +175,7 @@ init-method="init" destroy-method="close">
       <td>2 bytes</td>
    </tr>
    <tr>
-      <td>（字节）</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-   </tr>
-   <tr>
-      <td>Value</td>
+      <td>Value(数值)</td>
       <td>_YD_</td>
       <td>0x01</td>
       <td>----</td>
@@ -209,43 +186,9 @@ init-method="init" destroy-method="close">
       <td>见第二节</td>
       <td>##</td>
    </tr>
-   <tr>
-      <td>（数值）</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-   </tr>
-   <tr>
-      <td></td>
-   </tr>
 </table>
 
-<table>
-   <tr>
-      <td>John</td>
-      <td>Smith</td>
-      <td>123 Main St.</td>
-      <td>Springfield</td>
-   </tr>
-   <tr>
-      <td>Mary</td>
-      <td>Jones</td>
-      <td>456 Pine St.</td>
-      <td>Dover</td>
-   </tr>
-   <tr>
-      <td>Jim</td>
-      <td>Baker</td>
-      <td>789 Park Ave.</td>
-      <td>Lincoln</td>
-   </tr>
-</table>
+
 
 
 ### 多客户端测试以及性能和压力测试
