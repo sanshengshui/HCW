@@ -136,11 +136,14 @@ init-method="init" destroy-method="close">
 
 ###  单客户端测试以及调试功能(SingleTest)
 
+
 | frame_head    | Dir     | CommunicationID| SIMCCID | Produc  | Comm    | date_length | data | frame_tail|
 |:-------------:|:-------:|:--------------:|:-------:|:-------:|:-------:|：----------：|:----:|:---------:|
 | 帧头           | 方向    | 身份码          |SIM卡编码 |产品码    |功能码   |数据长度       |数据  | 帧尾       |
 |  4bytes       | 1bytes |   13 bytes      |20 bytes  | 1       |1 bytes | 2 bytes      |不固定 | 2bytes    |
 | _YD_          | 0x01   |    ----         |----      | 0x03    | 0x0A   | 详情如下      |---   | ##         |
+
+
 
 ### 多客户端测试以及性能和压力测试
  1. client模块中的`client.Client`类提供了进行压力测试的方法，可以修改启动客户端连接的数量`Client.clientNum`，
