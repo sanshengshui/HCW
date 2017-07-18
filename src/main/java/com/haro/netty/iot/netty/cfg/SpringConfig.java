@@ -33,7 +33,7 @@ import io.netty.handler.codec.string.StringEncoder;
  * PropertySource. For more information look <a href=
  * "http://static.springsource.org/spring/docs/3.2.2.RELEASE/javadoc-api/org/springframework/context/annotation/Configuration.html"
  * >here</a> and <a href=
- * "http://blog.springsource.com/2011/06/10/spring-3-1-m2-configuration-enhancements/"
+ * "http://blog.springsource.com/2011/06/10/s pring-3-1-m2-configuration-enhancements/"
  * >here</a>
  * 
  * @author Abraham Menacherry
@@ -45,7 +45,7 @@ import io.netty.handler.codec.string.StringEncoder;
 * @Description: TODO  
 * @author 穆书伟
 * @Email lovewsic@gmail.com
-* @date 2017年4月26日 上午10:29:31
+* @Date 2017年4月26日 上午10:29:31
  */
 @Configuration
 @ComponentScan("com.haro.netty")
