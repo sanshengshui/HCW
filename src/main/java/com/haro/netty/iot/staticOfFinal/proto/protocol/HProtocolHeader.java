@@ -9,17 +9,20 @@ package com.haro.netty.iot.staticOfFinal.proto.protocol;
  *       4        │   1   │    13           │     20    │      1   │   1    │      2      │                      │   2
  *  ├ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ┤
  *                │       │                 │           │          │        │             │                      │
- *  │Frame_head      Dir     CommunicationID     SIMCCID      Produc      Comm      data_length        Body Content         frame_tail
+ *  │frame_head      Dir     CommunicationID     SIMCCID      Produc      Comm      data_length        Body Content         frame_tail
  *                │       │                 │           │          │        │             │                      │
  *  └ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ┘
  *
- * 消息头16个字节定长
- * = 2 // magic = (short) 0xbabe
- * + 1 // 消息标志位, 低地址4位用来表示消息类型request/response/heartbeat等, 高地址4位用来表示序列化类型
- * + 1 // 状态位, 设置请求响应状态
- * + 8 // 消息 id, long 类型, 未来jupiter可能将id限制在48位, 留出高地址的16位作为扩展字段
- * + 4 // 消息体 body 长度, int 类型
- *
+ * 消息头42个字节定长
+ * = 4 // frame_head:‘_YD_’. 签名用以验证传输数据为亚都服务器端和数据数据传输模块间的数据传递。
+ * + 1 // Dir :数据方向，0x01代表设备至服务器，0x02表示服务器至设备；
+ * + 13// CommunicationID:设备通信识别码。通信编码用以表征数据传输模块的身份；
+ * + 20 // SIMCCID:SIM卡的CCID号，20个字节，16进制ASCII码形式；
+ * + 1 // Produc:产品码
+ * + 1 // Comm:命令码
+ * + 2 // data_length:消息体 body 长度, int 类型
+ * + X // Body Content:为主体数据长度； data:表示主体数据；
+ * + 2 // frame_tail:帧尾 ##,表示1帧数据结束；
  * jupiter
  * org.jupiter.transport
  *
