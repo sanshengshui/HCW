@@ -5,7 +5,6 @@ import com.haro.netty.iot.staticOfFinal.NettyChannelMap;
 import com.haro.netty.iot.thread.SaveDeviceIccidTask;
 import com.haro.netty.iot.thread.UpdateDeviceStatusTask;
 import com.haro.netty.iot.threadpool.ExecutorProcessPool;
-import com.haro.netty.service.DeviceStatusService;
 import com.haro.netty.service.QueryStatusForLightService;
 import com.haro.netty.service.StatusDeviceService;
 import com.haro.netty.test.pojo.DeviceStatus;
@@ -15,10 +14,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
-
-
-
-
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandler.Sharable;
 import io.netty.channel.ChannelHandlerContext;
