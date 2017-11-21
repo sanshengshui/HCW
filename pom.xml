@@ -5,6 +5,10 @@
     <modules>
         <module>rpc-common</module>
         <module>rpc-server</module>
+        <module>rpc-task</module>
+        <module>rpc-cache</module>
+        <module>rpc-bean</module>
+        <module>rpc-dao</module>
     </modules>
 
     <modelVersion>4.0.0</modelVersion>

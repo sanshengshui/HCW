@@ -6,13 +6,21 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="rpc-bean" />
+        <module name="rpc-cache" />
         <module name="rpc-common" />
+        <module name="rpc-dao" />
         <module name="rpc-server" />
+        <module name="rpc-task" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="rpc-bean" target="1.8" />
+      <module name="rpc-cache" target="1.8" />
       <module name="rpc-common" target="1.8" />
+      <module name="rpc-dao" target="1.8" />
       <module name="rpc-server" target="1.8" />
+      <module name="rpc-task" target="1.8" />
       <module name="sensIOT" target="1.8" />
     </bytecodeTargetLevel>
   </component>
