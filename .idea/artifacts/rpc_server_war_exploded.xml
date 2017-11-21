@@ -7,6 +7,7 @@
           <element id="module-output" name="rpc-server" />
         </element>
         <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: io.netty:netty-all:4.1.6.Final" />
           <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter-data-redis:1.5.8.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter:1.5.8.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot:1.5.8.RELEASE" />
