@@ -1,0 +1,15 @@
+# Created by .ignore support plugin (hsz.mobi)
+### Example user template template
+### Example user template
+
+# IntelliJ project files
+.idea
+*.iml
+out
+gen
+
+.gitignore
+rpc-common/src/
+rpc-server/src/main/java/
+rpc-server/src/main/resources/
+rpc-server/src/test/
