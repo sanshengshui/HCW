@@ -17,6 +17,7 @@
     <bytecodeTargetLevel>
       <module name="rpc-bean" target="1.8" />
       <module name="rpc-cache" target="1.8" />
+      <module name="rpc-client" target="1.8" />
       <module name="rpc-common" target="1.8" />
       <module name="rpc-dao" target="1.8" />
       <module name="rpc-server" target="1.8" />

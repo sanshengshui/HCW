@@ -10,7 +10,6 @@
         <module>rpc-bean</module>
         <module>rpc-dao</module>
     </modules>
-
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.sanshengshui</groupId>
     <artifactId>sensIOT</artifactId>

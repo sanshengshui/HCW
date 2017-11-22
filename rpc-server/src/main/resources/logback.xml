@@ -1,14 +1,41 @@
 <configuration>
-    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
-        <!-- encoders are assigned the type
-             ch.qos.logback.classic.encoder.PatternLayoutEncoder by default -->
+    <include resource="org/springframework/boot/logging/logback/defaults.xml"/>
+
+    <springProperty name="logging.file" scope="context" source="logging.file"/>
+    <springProperty name="logging.path" scope="context" source="logging.path"/>
+    <springProperty name="spring.application.name" scope="context" source="spring.application.name"/>
+    <!--指定日志文件路径-->
+    <property name="LOG_PATH" value="${logging.path:-${user.home}/logs}"/>
+    <!--指定日志文件名字-->
+    <property name="LOG_FILE" value="${logging.file:-${LOG_PATH}/application.log}"/>
+
+    <statusListener class="ch.qos.logback.core.status.NopStatusListener" />
+    <appender name="APPLICATION" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_FILE}</file>
         <encoder>
-            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+            <pattern>${FILE_LOG_PATTERN}</pattern>
+        </encoder>
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <fileNamePattern>${LOG_FILE}.%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+            <maxHistory>7</maxHistory>
+            <maxFileSize>50MB</maxFileSize>
+            <totalSizeCap>20GB</totalSizeCap>
+        </rollingPolicy>
+    </appender>
+
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>${CONSOLE_LOG_PATTERN}</pattern>
+            <charset>utf8</charset>
         </encoder>
     </appender>
-    <logger name="com.skplanet.impay" level="DEBUG"></logger>
-    <logger name="org.springframework.context" level="DEBUG"></logger>
-    <root level="debug">
-        <appender-ref ref="STDOUT" />
+
+
+    <!--从高->低  OFF、FATAL、ERROR、WARN、INFO、DEBUG、ALL-->
+    <!--此处root是info 所以只打印info及以上的级别-->
+    <root level="ALL">
+        <appender-ref ref="CONSOLE"/>
+        <appender-ref ref="APPLICATION"/>
     </root>
+
 </configuration>
