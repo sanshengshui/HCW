@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/rpc-bean/rpc-bean.iml" filepath="$PROJECT_DIR$/rpc-bean/rpc-bean.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rpc-cache/rpc-cache.iml" filepath="$PROJECT_DIR$/rpc-cache/rpc-cache.iml" />
       <module fileurl="file://$PROJECT_DIR$/rpc-common/rpc-common.iml" filepath="$PROJECT_DIR$/rpc-common/rpc-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rpc-dao/rpc-dao.iml" filepath="$PROJECT_DIR$/rpc-dao/rpc-dao.iml" />
       <module fileurl="file://$PROJECT_DIR$/rpc-server/rpc-server.iml" filepath="$PROJECT_DIR$/rpc-server/rpc-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rpc-task/rpc-task.iml" filepath="$PROJECT_DIR$/rpc-task/rpc-task.iml" />
       <module fileurl="file://$PROJECT_DIR$/sensIOT.iml" filepath="$PROJECT_DIR$/sensIOT.iml" />
     </modules>
   </component>

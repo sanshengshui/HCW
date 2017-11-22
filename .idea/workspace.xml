@@ -7,12 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b3ca76f1-b260-408f-bff9-001e3bd69cf9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rpc-bean/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rpc-cache/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rpc-dao/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rpc-task/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rpc-server/src/main/java/com/sanshengshui/server/netty/handler/ServerProtocolInitalizer.java" afterPath="$PROJECT_DIR$/rpc-server/src/main/java/com/sanshengshui/server/netty/handler/ServerProtocolInitalizer.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -30,7 +28,20 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="ServerProtocolInitalizer.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/rpc-server/src/main/java/com/sanshengshui/server/netty/handler/ServerProtocolInitalizer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="14" column="32" lean-forward="false" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -61,12 +72,12 @@
         <option value="$PROJECT_DIR$/rpc-server/src/main/resources/properties/sandbox/nettyserver.properties" />
         <option value="$PROJECT_DIR$/rpc-server/src/main/java/com/sanshengshui/server/Application.java" />
         <option value="$PROJECT_DIR$/rpc-server/src/main/java/com/sanshengshui/server/netty/handler/SomethingServerHandler.java" />
-        <option value="$PROJECT_DIR$/rpc-server/src/main/java/com/sanshengshui/server/netty/handler/ServerProtocolInitalizer.java" />
         <option value="$PROJECT_DIR$/rpc-server/pom.xml" />
         <option value="$PROJECT_DIR$/rpc-task/pom.xml" />
         <option value="$PROJECT_DIR$/rpc-cache/pom.xml" />
         <option value="$PROJECT_DIR$/rpc-bean/pom.xml" />
         <option value="$PROJECT_DIR$/rpc-dao/pom.xml" />
+        <option value="$PROJECT_DIR$/rpc-server/src/main/java/com/sanshengshui/server/netty/handler/ServerProtocolInitalizer.java" />
       </list>
     </option>
   </component>
@@ -111,8 +122,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="646" />
-    <option name="y" value="170" />
+    <option name="x" value="349" />
+    <option name="y" value="8" />
     <option name="width" value="1612" />
     <option name="height" value="1022" />
   </component>
@@ -139,6 +150,87 @@
             <path>
               <item name="sensIOT" type="b2602c69:ProjectViewProjectNode" />
               <item name="sensIOT" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sensIOT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sensIOT" type="462c0819:PsiDirectoryNode" />
+              <item name="rpc-server" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sensIOT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sensIOT" type="462c0819:PsiDirectoryNode" />
+              <item name="rpc-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sensIOT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sensIOT" type="462c0819:PsiDirectoryNode" />
+              <item name="rpc-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sensIOT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sensIOT" type="462c0819:PsiDirectoryNode" />
+              <item name="rpc-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sensIOT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sensIOT" type="462c0819:PsiDirectoryNode" />
+              <item name="rpc-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sensIOT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sensIOT" type="462c0819:PsiDirectoryNode" />
+              <item name="rpc-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="netty" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sensIOT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sensIOT" type="462c0819:PsiDirectoryNode" />
+              <item name="rpc-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="netty" type="462c0819:PsiDirectoryNode" />
+              <item name="handler" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sensIOT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sensIOT" type="462c0819:PsiDirectoryNode" />
+              <item name="rpc-task" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sensIOT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sensIOT" type="462c0819:PsiDirectoryNode" />
+              <item name="rpc-task" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sensIOT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sensIOT" type="462c0819:PsiDirectoryNode" />
+              <item name="rpc-task" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sensIOT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sensIOT" type="462c0819:PsiDirectoryNode" />
+              <item name="rpc-task" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -359,7 +451,7 @@
       <updated>1511234462272</updated>
       <workItem from="1511234469348" duration="6152000" />
       <workItem from="1511250303568" duration="9541000" />
-      <workItem from="1511260081224" duration="2198000" />
+      <workItem from="1511260081224" duration="4393000" />
     </task>
     <task id="LOCAL-00001" summary="添加git ignore文件过滤">
       <created>1511252000914</created>
@@ -389,11 +481,18 @@
       <option name="project" value="LOCAL" />
       <updated>1511260977116</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="rpc模块实现">
+      <created>1511262371885</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1511262371885</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17891000" />
+    <option name="totallyTimeSpent" value="20086000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1874" height="1096" extended-state="6" />
@@ -470,7 +569,8 @@
     <MESSAGE value="TCP communication server with Netty" />
     <MESSAGE value="提交--@&gt;&lt;@" />
     <MESSAGE value="TCP服务器配置" />
-    <option name="LAST_COMMIT_MESSAGE" value="TCP服务器配置" />
+    <MESSAGE value="rpc模块实现" />
+    <option name="LAST_COMMIT_MESSAGE" value="rpc模块实现" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -482,7 +582,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -553,7 +653,7 @@
         <state relative-caret-position="399">
           <caret line="21" column="14" lean-forward="false" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -590,18 +690,8 @@
         <state relative-caret-position="418">
           <caret line="24" column="35" lean-forward="false" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#666#667#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rpc-server/src/main/java/com/sanshengshui/server/netty/handler/ServerProtocolInitalizer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="34" column="55" lean-forward="false" selection-start-line="34" selection-start-column="55" selection-end-line="34" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#666#667#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -611,7 +701,7 @@
         <state relative-caret-position="684">
           <caret line="36" column="13" lean-forward="false" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -653,6 +743,16 @@
         <state relative-caret-position="456">
           <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rpc-server/src/main/java/com/sanshengshui/server/netty/handler/ServerProtocolInitalizer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="32" lean-forward="false" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
