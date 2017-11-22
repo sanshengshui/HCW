@@ -33,8 +33,9 @@ import java.util.Set;
  * @date 2017年11月21日 17:29
  */
 @SpringBootApplication
-@PropertySource(value = "classpath:/properties/sandbox/nettyserver.properties")
+@PropertySource(value= "classpath:/properties/sandbox/nettyserver.properties")
 public class Application {
+
 
     @Configuration
     @Profile("production")
@@ -44,7 +45,7 @@ public class Application {
 
     @Configuration
     @Profile("local")
-    @PropertySource({"classpath:/properties/local/nettyserver.properties"})
+    @PropertySource({"classpath:/properties/sandbox/nettyserver.properties"})
     static class Local
     { }
 
