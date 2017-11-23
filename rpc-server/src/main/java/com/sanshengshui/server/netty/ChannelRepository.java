@@ -20,9 +20,10 @@ import io.netty.channel.Channel;
 import java.util.HashMap;
 
 /**
- * Channel Repository using HashMap
- *
  * @author Jibeom Jung
+ * @Description Channel库
+ * @ClassName ChannelRepository
+ * @date 2017年11月23日 18:11
  */
 public class ChannelRepository {
     private HashMap<String, Channel> channelCache = new HashMap<String, Channel>();

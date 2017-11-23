@@ -26,9 +26,10 @@ import java.net.InetSocketAddress;
 
 
 /**
- * Main Server
- *
- * @author Jibeom Jung
+ * @author 穆书伟
+ * @Description 服务器启动类
+ * @date 2017年11月23日 18:09
+ * @ClassName TCPServer
  */
 @Component
 public class TCPServer {
