@@ -15,7 +15,7 @@ https://github.com/MicrosoftArchive/redis/releases
 ```
 <h4>2.解压</h4>
 将下载后的zip文件解压到本地磁盘，注意解压到的目录不能有中文和特殊字符，否则会出现很多奇葩的问题。解压后的目录如下：<br/>
-<p align="center"><img src ="download.png" alt="download" /></p>
+<p align="left"><img src ="download.png" alt="download" /></p>
 <h3>三.HA配置</h3>
 我们采用一主(master)二从(slave)三sentinel的架构模式来做演示<br/>
 
@@ -46,6 +46,7 @@ slaveof 127.0.0.1 6379  // 设置master服务器为6379
 其中修改sentinel.conf配置文件中的如下几个参数：<br/>
 
 ```
+bind 0.0.0.0
 port 26379 // 当前Sentinel服务运行的端口
 sentinel monitor mymaster 127.0.0.1 6379 2 
 sentinel down-after-milliseconds mymaster 5000
@@ -57,13 +58,52 @@ sentinel failover-timeout mymaster 15000
 
 ```
 1. port :当前Sentinel服务运行的端口
-2.sentinel monitor mymaster 127.0.0.1 6379 2:Sentinel去监视一个名为mymaster的主redis实例，这个主实例的IP地址为本机地址127.0.0.1，端口号为6379，而将这个主实例判断为失效至少需要2个 Sentinel进程的同意，只要同意Sentinel的数量不达标，自动failover就不会执行
-3.sentinel down-after-milliseconds mymaster 5000:指定了Sentinel认为Redis实例已经失效所需的毫秒数。当 实例超过该时间没有返回PING，或者直接返回错误，那么Sentinel将这个实例标记为主观下线。只有一个 Sentinel进程将实例标记为主观下线并不一定会引起实例的自动故障迁移：只有在足够数量的Sentinel都将一个实例标记为主观下线之后，实例才会被标记为客观下线，这时自动故障迁移才会执行
-4.sentinel parallel-syncs mymaster 1：指定了在执行故障转移时，最多可以有多少个从Redis实例在同步新的主实例，在从Redis实例较多的情况下这个数字越小，同步的时间越长，完成故障转移所需的时间就越长
+2.sentinel monitor mymaster 127.0.0.1 6379 2:Sentinel去监视一个名为mymaster的主redis实例，这个主实例的IP地址为本机地址
+127.0.0.1，端口号为6379，而将这个主实例判断为失效至少需要2个 Sentinel进程的同意，只要同意Sentinel的数量不达标，
+自动failover就不会执行
+3.sentinel down-after-milliseconds mymaster 5000:指定了Sentinel认为Redis实例已经失效所需的毫秒数。当 实例超过该时间没有
+返回PING，或者直接返回错误，那么Sentinel将这个实例标记为主观下线。只有一个 Sentinel进程将实例标记为主观下线并不一定会引
+起实例的自动故障迁移：只有在足够数量的Sentinel都将一个实例标记为主观下线之后，实例才会被标记为客观下线，这时自动故障
+迁移才会执行
+4.sentinel parallel-syncs mymaster 1：指定了在执行故障转移时，最多可以有多少个从Redis实例在同步新的主实例，在从Redis实例
+较多的情况下这个数字越小，同步的时间越长，完成故障转移所需的时间就越长
 5.sentinel failover-timeout mymaster 15000：如果在该时间（ms）内未能完成failover操作，则认为该failover失败
 ```
-
-
-
+<h3>五.启动服务器</h3>
+<h4>1、分别启动master，slave1，slave2</h4>
+启动命令分别如下：
+```
+redis-server.exe redis.conf
+redis-server.exe redis6380.conf
+redis-server.exe redis6381.conf
+```
+<h4>2、分别启动sentinel1，sentinel2，sentinel3</h4>
+启动命令分别如下：
+```
+redis-server.exe sentinel.conf --sentinel
+redis-server.exe sentinel26479.conf --sentinel
+redis-server.exe sentinel26579.conf --sentinel
+```
+服务启动成功后，界面显示如下：<br/>
+master redis服务器
+<p align="left"><img src ="master_MarkMan.png" alt="download" /></p>
+slaver redis服务器
+<p align="left"><img src ="slave_MarkMan.png" alt="download" /></p>
+sentinel redis服务器
+<p align="left"><img src ="sentinel.png" alt="download" /></p>
+<h4>3、查看redis服务器状态</h4>
+<p align="left"><img src ="info_MarkMan.png" alt="download" /></p>
+<h3>六、测试服务器</h3>
+这里只做简单的测试
+<p align="left"><img src ="test_MarkMan.png" alt="download" /></p>
+<h3>七、redis主从自动failover测试</h3>
+<h4>1、停止master服务器</h4>
+<p align="left"><img src ="error_MarkMan.png" alt="download" /></p>
+<h4>2、查看剩余服务器的状态</h4>
+<p align="left"><img src ="switchmaster_MarkMan.png" alt="download" /></p>
+从上图中可以看出来，master的服务器端口从6379变成了6380，也就是说redis自动的实现了主从切换，我们可以在查看下sentinel
+的状态，如下：
+<p align="left"><img src ="swithMaster_MarkMan.png" alt="download" /></p>
+我们发现sentinel监控到127.0.0.1:6379已经无法ping通了，切换master服务器为127.0.0.1:6380
 
 

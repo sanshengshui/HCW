@@ -6,9 +6,16 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b3ca76f1-b260-408f-bff9-001e3bd69cf9" name="Default" comment="">
+    <list default="true" id="b3ca76f1-b260-408f-bff9-001e3bd69cf9" name="Default" comment="部署redis sentinel(window下)说明文档">
+      <change beforePath="" afterPath="$PROJECT_DIR$/how-deploy-redis_sentinel(window)/error_MarkMan.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/how-deploy-redis_sentinel(window)/info_MarkMan.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/how-deploy-redis_sentinel(window)/master_MarkMan.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/how-deploy-redis_sentinel(window)/sentinel.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/how-deploy-redis_sentinel(window)/slave_MarkMan.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/how-deploy-redis_sentinel(window)/switchmaster_MarkMan.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/how-deploy-redis_sentinel(window)/swithMaster_MarkMan.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/how-deploy-redis_sentinel(window)/test_MarkMan.png" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/document/download.png" afterPath="$PROJECT_DIR$/how-deploy-redis_sentinel(window)/download.png" />
       <change beforePath="$PROJECT_DIR$/how-deploy-redis_sentinel(window)/README.md" afterPath="$PROJECT_DIR$/how-deploy-redis_sentinel(window)/README.md" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -45,8 +52,8 @@
         <entry file="file://$PROJECT_DIR$/how-deploy-redis_sentinel(window)/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="165">
-                <caret line="17" column="29" lean-forward="false" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+              <first_editor relative-caret-position="-428">
+                <caret line="48" column="12" lean-forward="false" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -349,11 +356,11 @@
       <recent name="com.sanshengshui.server.netty" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\git\sensIOT\how-deploy-redis_sentinel(window)" />
       <recent name="D:\git\sensIOT\document" />
       <recent name="D:\git\sensIOT\rpc-server\src\main\resources\properties\sandbox" />
       <recent name="D:\git\sensIOT\rpc-server\src\main\resources" />
       <recent name="D:\git\sensIOT\rpc-server\src\main\resources\properties\local" />
-      <recent name="D:\git\sensIOT\rpc-server\src\main\java\com\sanshengshui\server\netty\handler" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -594,11 +601,18 @@
       <option name="project" value="LOCAL" />
       <updated>1512475759840</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="部署redis sentinel(window下)说明文档">
+      <created>1512475848354</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1512475848354</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55325000" />
+    <option name="totallyTimeSpent" value="57393000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1874" height="1096" extended-state="6" />
@@ -1126,8 +1140,8 @@
     <entry file="file://$PROJECT_DIR$/how-deploy-redis_sentinel(window)/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="165">
-            <caret line="17" column="29" lean-forward="false" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+          <first_editor relative-caret-position="-428">
+            <caret line="48" column="12" lean-forward="false" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
             <folding />
           </first_editor>
           <second_editor />
