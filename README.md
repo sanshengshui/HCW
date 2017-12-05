@@ -1,6 +1,5 @@
 <h1>优雅的物联网架构</h1>
 <p align="center"><img src ="picture/horizon.PNG" alt="horizon" /></p>
-<p align="center"><img src ="picture/slave_MarkMan.png" alt="horizon" /></p>
 <p>技术选型:</p>
 
 - [Netty](https://github.com/netty/netty)
@@ -15,5 +14,6 @@
 - RPC(远程过程调用)
 - ZooKeeper(未实现)：提供服务注册与发现功能，开发分布式系统的必备选择，同时它也具备天生的集群能力。
 - 持续更新中 @>+++++++<@
+<p align="center"><img src ="picture/slave_MarkMan.png" alt="horizon" /></p>
 <hr/>
 <p align="center"><img src ="document/项目主框架.png" alt="horizon" /></p>
