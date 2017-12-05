@@ -33,7 +33,7 @@
 
     <!--从高->低  OFF、FATAL、ERROR、WARN、INFO、DEBUG、ALL-->
     <!--此处root是info 所以只打印info及以上的级别-->
-    <root level="ALL">
+    <root level="DEBUG">
         <appender-ref ref="CONSOLE"/>
         <appender-ref ref="APPLICATION"/>
     </root>
