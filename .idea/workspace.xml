@@ -80,8 +80,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="342">
-                <caret line="18" column="62" lean-forward="false" selection-start-line="18" selection-start-column="62" selection-end-line="18" selection-end-column="62" />
+              <first_editor relative-caret-position="304">
+                <caret line="16" column="65" lean-forward="false" selection-start-line="16" selection-start-column="65" selection-end-line="16" selection-end-column="65" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -585,11 +585,18 @@
       <option name="project" value="LOCAL" />
       <updated>1512470461346</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="调整">
+      <created>1512470556688</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1512470556688</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50500000" />
+    <option name="totallyTimeSpent" value="50580000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1874" height="1096" extended-state="6" />
@@ -734,7 +741,8 @@
     <MESSAGE value="2017年11月22日--项目提交" />
     <MESSAGE value="README文档更新" />
     <MESSAGE value="文档测试" />
-    <option name="LAST_COMMIT_MESSAGE" value="文档测试" />
+    <MESSAGE value="调整" />
+    <option name="LAST_COMMIT_MESSAGE" value="调整" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1111,8 +1119,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="342">
-            <caret line="18" column="62" lean-forward="false" selection-start-line="18" selection-start-column="62" selection-end-line="18" selection-end-column="62" />
+          <first_editor relative-caret-position="304">
+            <caret line="16" column="65" lean-forward="false" selection-start-line="16" selection-start-column="65" selection-end-line="16" selection-end-column="65" />
             <folding />
           </first_editor>
           <second_editor />
