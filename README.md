@@ -1,5 +1,6 @@
 <h1>优雅的物联网架构</h1>
 <p align="center"><img src ="picture/horizon.PNG" alt="horizon" /></p>
+<p align="center"><img src ="picture/slave_MarkMan.png" alt="horizon" /></p>
 <p>技术选型:</p>
 
 - [Netty](https://github.com/netty/netty)
