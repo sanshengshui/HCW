@@ -71,20 +71,27 @@ sentinel failover-timeout mymaster 15000
 ```
 <h3>五.启动服务器</h3>
 <h4>1、分别启动master，slave1，slave2</h4>
+
 启动命令分别如下：
+
 ```
 redis-server.exe redis.conf
 redis-server.exe redis6380.conf
 redis-server.exe redis6381.conf
 ```
+
 <h4>2、分别启动sentinel1，sentinel2，sentinel3</h4>
+
 启动命令分别如下：
+
 ```
 redis-server.exe sentinel.conf --sentinel
 redis-server.exe sentinel26479.conf --sentinel
 redis-server.exe sentinel26579.conf --sentinel
 ```
+
 服务启动成功后，界面显示如下：<br/>
+
 master redis服务器
 <p align="left"><img src ="master_MarkMan.png" alt="download" /></p>
 slaver redis服务器

@@ -6,15 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b3ca76f1-b260-408f-bff9-001e3bd69cf9" name="Default" comment="部署redis sentinel(window下)说明文档">
-      <change beforePath="" afterPath="$PROJECT_DIR$/how-deploy-redis_sentinel(window)/error_MarkMan.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/how-deploy-redis_sentinel(window)/info_MarkMan.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/how-deploy-redis_sentinel(window)/master_MarkMan.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/how-deploy-redis_sentinel(window)/sentinel.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/how-deploy-redis_sentinel(window)/slave_MarkMan.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/how-deploy-redis_sentinel(window)/switchmaster_MarkMan.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/how-deploy-redis_sentinel(window)/swithMaster_MarkMan.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/how-deploy-redis_sentinel(window)/test_MarkMan.png" />
+    <list default="true" id="b3ca76f1-b260-408f-bff9-001e3bd69cf9" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/how-deploy-redis_sentinel(window)/README.md" afterPath="$PROJECT_DIR$/how-deploy-redis_sentinel(window)/README.md" />
     </list>
@@ -52,8 +44,8 @@
         <entry file="file://$PROJECT_DIR$/how-deploy-redis_sentinel(window)/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="-428">
-                <caret line="48" column="12" lean-forward="false" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
+              <first_editor relative-caret-position="925">
+                <caret line="91" column="0" lean-forward="true" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -178,9 +170,9 @@
     <servers />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="621" />
-    <option name="y" value="9" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="792" />
+    <option name="y" value="95" />
     <option name="width" value="1612" />
     <option name="height" value="1042" />
   </component>
@@ -608,14 +600,21 @@
       <option name="project" value="LOCAL" />
       <updated>1512475848354</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="部署redis sentinel(window下)完成">
+      <created>1512477928787</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1512477928787</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57393000" />
+    <option name="totallyTimeSpent" value="57651000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="54" y="-8" width="1874" height="1096" extended-state="6" />
+    <frame x="792" y="95" width="1612" height="1042" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -638,7 +637,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.8211207" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27469477" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32142857" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30280173" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -759,7 +758,8 @@
     <MESSAGE value="文档测试" />
     <MESSAGE value="调整" />
     <MESSAGE value="部署redis sentinel(window下)说明文档" />
-    <option name="LAST_COMMIT_MESSAGE" value="部署redis sentinel(window下)说明文档" />
+    <MESSAGE value="部署redis sentinel(window下)完成" />
+    <option name="LAST_COMMIT_MESSAGE" value="部署redis sentinel(window下)完成" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1140,8 +1140,8 @@
     <entry file="file://$PROJECT_DIR$/how-deploy-redis_sentinel(window)/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-428">
-            <caret line="48" column="12" lean-forward="false" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
+          <first_editor relative-caret-position="925">
+            <caret line="91" column="0" lean-forward="true" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor />
