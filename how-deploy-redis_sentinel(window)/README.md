@@ -15,7 +15,7 @@ https://github.com/MicrosoftArchive/redis/releases
 ```
 <h4>2.解压</h4>
 将下载后的zip文件解压到本地磁盘，注意解压到的目录不能有中文和特殊字符，否则会出现很多奇葩的问题。解压后的目录如下：<br/>
-<p align="center"><img src ="document/download.png" alt="download" /></p>
+<p align="center"><img src ="download.png" alt="download" /></p>
 <h3>三.HA配置</h3>
 我们采用一主(master)二从(slave)三sentinel的架构模式来做演示<br/>
 

@@ -7,8 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b3ca76f1-b260-408f-bff9-001e3bd69cf9" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/document/download.png" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/document/download.png" afterPath="$PROJECT_DIR$/how-deploy-redis_sentinel(window)/download.png" />
       <change beforePath="$PROJECT_DIR$/how-deploy-redis_sentinel(window)/README.md" afterPath="$PROJECT_DIR$/how-deploy-redis_sentinel(window)/README.md" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -45,8 +45,8 @@
         <entry file="file://$PROJECT_DIR$/how-deploy-redis_sentinel(window)/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="735">
-                <caret line="62" column="83" lean-forward="false" selection-start-line="62" selection-start-column="83" selection-end-line="62" selection-end-column="83" />
+              <first_editor relative-caret-position="165">
+                <caret line="17" column="29" lean-forward="false" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -341,6 +341,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\git\sensIOT\how-deploy-redis_sentinel(window)" />
       <recent name="D:\git\sensIOT\document" />
       <recent name="D:\git\sensIOT\rpc-server\src\main\resources\properties\production" />
     </key>
@@ -586,11 +587,18 @@
       <option name="project" value="LOCAL" />
       <updated>1512473340469</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="部署redis sentinel(window下)说明文档">
+      <created>1512475759816</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1512475759840</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55208000" />
+    <option name="totallyTimeSpent" value="55325000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1874" height="1096" extended-state="6" />
@@ -736,7 +744,8 @@
     <MESSAGE value="README文档更新" />
     <MESSAGE value="文档测试" />
     <MESSAGE value="调整" />
-    <option name="LAST_COMMIT_MESSAGE" value="调整" />
+    <MESSAGE value="部署redis sentinel(window下)说明文档" />
+    <option name="LAST_COMMIT_MESSAGE" value="部署redis sentinel(window下)说明文档" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1117,8 +1126,8 @@
     <entry file="file://$PROJECT_DIR$/how-deploy-redis_sentinel(window)/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="735">
-            <caret line="62" column="83" lean-forward="false" selection-start-line="62" selection-start-column="83" selection-end-line="62" selection-end-column="83" />
+          <first_editor relative-caret-position="165">
+            <caret line="17" column="29" lean-forward="false" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
             <folding />
           </first_editor>
           <second_editor />
