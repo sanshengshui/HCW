@@ -113,4 +113,5 @@ sentinel redis服务器
 <p align="left"><img src ="swithMaster_MarkMan.png" alt="download" /></p>
 我们发现sentinel监控到127.0.0.1:6379已经无法ping通了，切换master服务器为127.0.0.1:6380
 
+[部署测试](http://note.youdao.com/noteshare?id=2a1904d74a04ac37c4149ca755b1a440&sub=555444FCCB164B1FBEA8FECA8D758FD6)
 
