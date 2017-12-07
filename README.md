@@ -6,7 +6,7 @@
 - Maven
 - Spring
 - Mybatis(最少配置方案)
-- Druid(数据源配置 sql防注入 sql性能监控)
+- [Druid(数据源配置 sql防注入 sql性能监控)](https://github.com/sanshengshui/HCW/blob/springboot/how-deploy-druid(integration-springboot)/README.md)
 - Google Protobuf解编码框架 Prostostuff：它基于Protobuf序列化框架，面向POJO，无需编写.proto文件。
 - Quartz时间调度
 - [Redis Sentinel主从高可用方案](https://github.com/sanshengshui/HCW/tree/springboot/how-deploy-redis_sentinel(window)/README.md)
