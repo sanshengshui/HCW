@@ -6,9 +6,10 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b3ca76f1-b260-408f-bff9-001e3bd69cf9" name="Default" comment="修正">
+    <list default="true" id="b3ca76f1-b260-408f-bff9-001e3bd69cf9" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/how-deploy-druid(integration-springboot)/README.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change beforePath="$PROJECT_DIR$/how-deploy-druid(integration-springboot)/在springboot中集成druid.md" afterPath="$PROJECT_DIR$/how-deploy-druid(integration-springboot)/README.md" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -40,12 +41,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="114">
-                <caret line="6" column="12" lean-forward="true" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+              <first_editor relative-caret-position="152">
+                <caret line="8" column="82" lean-forward="false" selection-start-line="8" selection-start-column="82" selection-end-line="8" selection-end-column="82" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -67,11 +68,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="在springboot中集成druid.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/how-deploy-druid(integration-springboot)/在springboot中集成druid.md">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/how-deploy-druid(integration-springboot)/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="114">
+              <first_editor relative-caret-position="-570">
                 <caret line="6" column="22" lean-forward="false" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
                 <folding>
                   <marker date="1512646223198" expanded="true" signature="483:631" ph="..." />
@@ -144,7 +145,6 @@
         <option value="$PROJECT_DIR$/rpc-server/src/main/java/com/sanshengshui/server/netty/TCPServer.java" />
         <option value="$PROJECT_DIR$/rpc-server/src/main/java/com/sanshengshui/server/netty/ChannelRepository.java" />
         <option value="$PROJECT_DIR$/rpc-server/src/main/resources/logback.xml" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/how-deploy-redis_sentinel(window)/README.md" />
         <option value="$PROJECT_DIR$/rpc-common/src/main/java/com/sanshengshui/common/util/SerializationUtil.java" />
         <option value="$PROJECT_DIR$/rpc-common/src/main/java/com/sanshengshui/common/codec/RpcEncoder.java" />
@@ -154,6 +154,7 @@
         <option value="$PROJECT_DIR$/rpc-common/src/main/java/com/sanshengshui/common/util/CollectionUtil.java" />
         <option value="$PROJECT_DIR$/rpc-common/src/main/java/com/sanshengshui/common/codec/RpcDecoder.java" />
         <option value="$PROJECT_DIR$/how-deploy-druid(integration-springboot)/在springboot中集成druid.md" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -543,7 +544,7 @@
       <workItem from="1512531301728" duration="5589000" />
       <workItem from="1512546822750" duration="9071000" />
       <workItem from="1512637482545" duration="193000" />
-      <workItem from="1512638392615" duration="3672000" />
+      <workItem from="1512638392615" duration="3761000" />
     </task>
     <task id="LOCAL-00001" summary="添加git ignore文件过滤">
       <created>1511252000914</created>
@@ -713,11 +714,18 @@
       <option name="project" value="LOCAL" />
       <updated>1512646274136</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="test">
+      <created>1512646413705</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1512646413705</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80016000" />
+    <option name="totallyTimeSpent" value="80105000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1874" height="1096" extended-state="6" />
@@ -844,7 +852,8 @@
     <MESSAGE value="添加链接" />
     <MESSAGE value="如何在SpringBoot中集成Druid数据源" />
     <MESSAGE value="修正" />
-    <option name="LAST_COMMIT_MESSAGE" value="修正" />
+    <MESSAGE value="test" />
+    <option name="LAST_COMMIT_MESSAGE" value="test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1108,17 +1117,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="114">
-            <caret line="6" column="12" lean-forward="true" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/rpc-common/src/main/java/com/sanshengshui/common/codec/RpcEncoder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
@@ -1161,10 +1159,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/how-deploy-druid(integration-springboot)/在springboot中集成druid.md">
+    <entry file="file://$PROJECT_DIR$/how-deploy-druid(integration-springboot)/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="114">
+          <first_editor relative-caret-position="-570">
             <caret line="6" column="22" lean-forward="false" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
             <folding>
               <marker date="1512646223198" expanded="true" signature="483:631" ph="..." />
@@ -1183,6 +1181,17 @@
               <marker date="1512646223198" expanded="true" signature="8157:8222" ph="{...}" />
               <marker date="1512646223198" expanded="true" signature="8285:8351" ph="{...}" />
             </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="152">
+            <caret line="8" column="82" lean-forward="false" selection-start-line="8" selection-start-column="82" selection-end-line="8" selection-end-column="82" />
+            <folding />
           </first_editor>
           <second_editor />
         </state>
