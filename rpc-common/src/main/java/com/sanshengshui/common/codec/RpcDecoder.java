@@ -17,6 +17,7 @@ public class RpcDecoder extends ByteToMessageDecoder{
     public RpcDecoder(Class<?> genericClass){
         this.genericClass = genericClass;
     }
+
     @Override
     protected void decode(ChannelHandlerContext channelHandlerContext, ByteBuf byteBuf, List<Object> list) throws Exception {
 
