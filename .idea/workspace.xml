@@ -7,11 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b3ca76f1-b260-408f-bff9-001e3bd69cf9" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/how-deploy-druid(integration-springboot)/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/how-deploy-druid(integration-springboot)/druid.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/how-deploy-druid(integration-springboot)/在springboot中集成druid.md" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/rpc-common/src/main/java/com/sanshengshui/common/codec/RpcDecoder.java" afterPath="$PROJECT_DIR$/rpc-common/src/main/java/com/sanshengshui/common/codec/RpcDecoder.java" />
+      <change beforePath="$PROJECT_DIR$/how-deploy-druid(integration-springboot)/在springboot中集成druid.md" afterPath="$PROJECT_DIR$/how-deploy-druid(integration-springboot)/在springboot中集成druid.md" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -74,24 +71,24 @@
         <entry file="file://$PROJECT_DIR$/how-deploy-druid(integration-springboot)/在springboot中集成druid.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="922">
-                <caret line="259" column="18" lean-forward="false" selection-start-line="259" selection-start-column="18" selection-end-line="259" selection-end-column="18" />
+              <first_editor relative-caret-position="114">
+                <caret line="6" column="22" lean-forward="false" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
                 <folding>
-                  <marker date="1512646019132" expanded="true" signature="487:635" ph="..." />
-                  <marker date="1512646019132" expanded="true" signature="1975:2548" ph="..." />
-                  <marker date="1512646019132" expanded="true" signature="2550:2637" ph="/**...*/" />
-                  <marker date="1512646019132" expanded="true" signature="4115:4468" ph="{...}" />
-                  <marker date="1512646019132" expanded="true" signature="4539:4971" ph="{...}" />
-                  <marker date="1512646019132" expanded="true" signature="5023:6010" ph="{...}" />
-                  <marker date="1512646019132" expanded="true" signature="6075:6213" ph="..." />
-                  <marker date="1512646019132" expanded="true" signature="6215:6726" ph="@{...}" />
-                  <marker date="1512646019132" expanded="true" signature="6970:7105" ph="..." />
-                  <marker date="1512646019132" expanded="true" signature="7107:7314" ph="@{...}" />
-                  <marker date="1512646019132" expanded="true" signature="7532:7850" ph="..." />
-                  <marker date="1512646019132" expanded="true" signature="7853:7914" ph="@{...}" />
-                  <marker date="1512646019132" expanded="true" signature="8010:8077" ph="{...}" />
-                  <marker date="1512646019132" expanded="true" signature="8181:8246" ph="{...}" />
-                  <marker date="1512646019132" expanded="true" signature="8309:8375" ph="{...}" />
+                  <marker date="1512646223198" expanded="true" signature="483:631" ph="..." />
+                  <marker date="1512646223198" expanded="true" signature="1963:2536" ph="..." />
+                  <marker date="1512646223198" expanded="true" signature="2538:2625" ph="/**...*/" />
+                  <marker date="1512646223198" expanded="true" signature="4103:4456" ph="{...}" />
+                  <marker date="1512646223198" expanded="true" signature="4527:4959" ph="{...}" />
+                  <marker date="1512646223198" expanded="true" signature="5011:5998" ph="{...}" />
+                  <marker date="1512646223198" expanded="true" signature="6059:6197" ph="..." />
+                  <marker date="1512646223198" expanded="true" signature="6199:6710" ph="@{...}" />
+                  <marker date="1512646223198" expanded="true" signature="6950:7085" ph="..." />
+                  <marker date="1512646223198" expanded="true" signature="7087:7294" ph="@{...}" />
+                  <marker date="1512646223198" expanded="true" signature="7508:7826" ph="..." />
+                  <marker date="1512646223198" expanded="true" signature="7829:7890" ph="@{...}" />
+                  <marker date="1512646223198" expanded="true" signature="7986:8053" ph="{...}" />
+                  <marker date="1512646223198" expanded="true" signature="8157:8222" ph="{...}" />
+                  <marker date="1512646223198" expanded="true" signature="8285:8351" ph="{...}" />
                 </folding>
               </first_editor>
               <second_editor />
@@ -559,7 +556,7 @@
       <workItem from="1512531301728" duration="5589000" />
       <workItem from="1512546822750" duration="9071000" />
       <workItem from="1512637482545" duration="193000" />
-      <workItem from="1512638392615" duration="3328000" />
+      <workItem from="1512638392615" duration="3496000" />
     </task>
     <task id="LOCAL-00001" summary="添加git ignore文件过滤">
       <created>1511252000914</created>
@@ -715,11 +712,18 @@
       <option name="project" value="LOCAL" />
       <updated>1512554430410</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="如何在SpringBoot中集成Druid数据源">
+      <created>1512646058058</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1512646058058</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79672000" />
+    <option name="totallyTimeSpent" value="79840000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1874" height="1096" extended-state="6" />
@@ -844,7 +848,8 @@
     <MESSAGE value="部署redis sentinel(window下)说明文档" />
     <MESSAGE value="部署redis sentinel(window下)完成" />
     <MESSAGE value="添加链接" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加链接" />
+    <MESSAGE value="如何在SpringBoot中集成Druid数据源" />
+    <option name="LAST_COMMIT_MESSAGE" value="如何在SpringBoot中集成Druid数据源" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1164,24 +1169,24 @@
     <entry file="file://$PROJECT_DIR$/how-deploy-druid(integration-springboot)/在springboot中集成druid.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="922">
-            <caret line="259" column="18" lean-forward="false" selection-start-line="259" selection-start-column="18" selection-end-line="259" selection-end-column="18" />
+          <first_editor relative-caret-position="114">
+            <caret line="6" column="22" lean-forward="false" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
             <folding>
-              <marker date="1512646019132" expanded="true" signature="487:635" ph="..." />
-              <marker date="1512646019132" expanded="true" signature="1975:2548" ph="..." />
-              <marker date="1512646019132" expanded="true" signature="2550:2637" ph="/**...*/" />
-              <marker date="1512646019132" expanded="true" signature="4115:4468" ph="{...}" />
-              <marker date="1512646019132" expanded="true" signature="4539:4971" ph="{...}" />
-              <marker date="1512646019132" expanded="true" signature="5023:6010" ph="{...}" />
-              <marker date="1512646019132" expanded="true" signature="6075:6213" ph="..." />
-              <marker date="1512646019132" expanded="true" signature="6215:6726" ph="@{...}" />
-              <marker date="1512646019132" expanded="true" signature="6970:7105" ph="..." />
-              <marker date="1512646019132" expanded="true" signature="7107:7314" ph="@{...}" />
-              <marker date="1512646019132" expanded="true" signature="7532:7850" ph="..." />
-              <marker date="1512646019132" expanded="true" signature="7853:7914" ph="@{...}" />
-              <marker date="1512646019132" expanded="true" signature="8010:8077" ph="{...}" />
-              <marker date="1512646019132" expanded="true" signature="8181:8246" ph="{...}" />
-              <marker date="1512646019132" expanded="true" signature="8309:8375" ph="{...}" />
+              <marker date="1512646223198" expanded="true" signature="483:631" ph="..." />
+              <marker date="1512646223198" expanded="true" signature="1963:2536" ph="..." />
+              <marker date="1512646223198" expanded="true" signature="2538:2625" ph="/**...*/" />
+              <marker date="1512646223198" expanded="true" signature="4103:4456" ph="{...}" />
+              <marker date="1512646223198" expanded="true" signature="4527:4959" ph="{...}" />
+              <marker date="1512646223198" expanded="true" signature="5011:5998" ph="{...}" />
+              <marker date="1512646223198" expanded="true" signature="6059:6197" ph="..." />
+              <marker date="1512646223198" expanded="true" signature="6199:6710" ph="@{...}" />
+              <marker date="1512646223198" expanded="true" signature="6950:7085" ph="..." />
+              <marker date="1512646223198" expanded="true" signature="7087:7294" ph="@{...}" />
+              <marker date="1512646223198" expanded="true" signature="7508:7826" ph="..." />
+              <marker date="1512646223198" expanded="true" signature="7829:7890" ph="@{...}" />
+              <marker date="1512646223198" expanded="true" signature="7986:8053" ph="{...}" />
+              <marker date="1512646223198" expanded="true" signature="8157:8222" ph="{...}" />
+              <marker date="1512646223198" expanded="true" signature="8285:8351" ph="{...}" />
             </folding>
           </first_editor>
           <second_editor />

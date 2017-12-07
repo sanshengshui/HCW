@@ -1,6 +1,5 @@
 ## 在SpringBoot中使用Druid作为数据源
 
----
 ### Druid介绍
 Druid号称是Java语言中最好的数据源连接池。
 1. 可以监控数据库访问性能,Druid内置提供了一个功能强大的StatFilter插件，能够详细统计SQL的执行性能，这对于线上分析数据库访问性能有帮助。
@@ -19,7 +18,7 @@ Druid号称是Java语言中最好的数据源连接池。
     </dependency>
 ```
 #### 2.配置数据源相关信息
-- [x] ==**application.properties**==
+- [x] **application.properties**
 
 ```xml
 # 数据库访问配置
@@ -55,7 +54,7 @@ spring.datasource.connectionProperties=druid.stat.mergeSql=true;druid.stat.slowS
 # 合并多个DruidDataSource的监控数据
 #spring.datasource.useGlobalDataSourceStat=true
 ```
-- [x] ==**SpringBoot Druid数据源配置**==
+- [x] **SpringBoot Druid数据源配置**
 ```java
 import com.alibaba.druid.pool.DruidDataSource;
 import com.alibaba.druid.support.http.StatViewServlet;
@@ -179,7 +178,7 @@ public class DruidConfig {
 ```
 
 #### 3.配置监控统计功能
-- [x] ==**配置Servlet**==
+- [x] **配置Servlet**
 
 ```java
 import com.alibaba.druid.support.http.StatViewServlet;
@@ -206,7 +205,7 @@ public class DruidStatViewServlet extends StatViewServlet {
 }
 
 ```
-- [x] ==**配置Filter**==
+- [x] **配置Filter**
 ```java
 import com.alibaba.druid.support.http.WebStatFilter;
 
@@ -229,7 +228,7 @@ public class DruidStatFilter extends WebStatFilter {
 
 ```
 #### 4.使Druid数据源在SpringBoot中生效
-- [x] ==**配置SpringBoot主启动类**==
+- [x] **配置SpringBoot主启动类**
 ```java
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
