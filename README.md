@@ -1,10 +1,10 @@
 <h1>优雅的物联网架构</h1>
-<p align="center"><img src ="picture/horizon.PNG" alt="horizon" /></p>
-<p>技术选型:</p>
 
 ## SensIot V2.0
 
 [新版基于SpringBoot全面升级并拆分模块!](https://github.com/sanshengshui/HCW/tree/springboot)
+<p align="center"><img src ="picture/horizon.PNG" alt="horizon" /></p>
+<p>技术选型:</p>
 
 - [Netty](https://github.com/netty/netty)
 - Maven
